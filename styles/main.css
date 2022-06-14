@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 62.5%;
+}
+
+/*
+    ===========================================
+    HEADER
+    ===========================================
+*/
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+.navHeader{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(19, 156, 110);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+#btnNav{
+    display: none;
+}
+
+.navBar{
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    text-align: center;
+}
