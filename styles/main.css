@@ -27,24 +27,71 @@ header{
     width: 100%;
     height: 100vh;
 }
-.navHeader{
+
+.container{
     width: 100%;
-    height: fit-content;
+}
+
+.navHeader{
+    height: 100px;
     background-color: rgb(19, 156, 110);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     font-size: 2rem;
+}
+
+.linkLogo{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-left: 40px;
+}
+
+.logo{
+    width: 90px;
 }
 
 #btnNav{
     display: none;
+    
+}
+
+.labelNav{
+    padding-right: 40px;
+}
+
+#btnNav:checked ~ .navBar{
+    visibility: visible;
 }
 
 .navBar{
     width: 100%;
+    height: fit-content;
     position: fixed;
-    top: 80px;
+    top: 100px;
     text-align: center;
+    visibility: collapse;
+    background-color: aquamarine;
+}
+
+.listItem{ 
+    width: 100%;
+    padding: 8px 0;
+}
+
+.listLink{
+    width: 100%;
+}
+
+.listItem:hover{
+    padding: 15px 0;
+    background-color: black;
+    
+}
+.listLink:hover{
+    background-color: black;
+    color: white;
 }
