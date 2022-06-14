@@ -1,3 +1,10 @@
+:root{
+    --night:#2C2E43;
+    --black:#595260;
+    --gray:#B2B1B9;
+    --yellow:#FFD523;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -31,7 +38,7 @@ header{
 .navHeader{
     width: 100%;
     height: 70px;
-    background-color: rgb(31, 32, 32);
+    background-color: var(--night);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,10 +48,11 @@ header{
 .linkLogo{
     display: flex;
     align-items: center;
-    color: white;
+    color: var(--yellow);
     font-size: 2.5rem;
     text-transform: uppercase;
     padding-left: 40px;
+    font-weight: bold;
 }
 
 .logo{
@@ -57,8 +65,9 @@ header{
 }
 
 .labelNav{
+    font-size: 2.8rem;
     padding-right: 40px;
-    color: white;
+    color: var(--yellow);
 }
 
 #btnNav:checked ~ .navBar{
@@ -69,31 +78,60 @@ header{
 .navBar{
     width: 100%;
     height: fit-content;
-    position: fixed;
+    position: absolute;
     top: 70px;
     text-align: center;
     visibility: collapse;
+    background-color: var(--black);
 }
 
 .listItem{ 
     width: 100%;
-    padding: 8px 0;
-    color: black;
+    padding: 20px 0;
+    font-size: larger;
+    color: var(--gray);
 }
 
 .listItem:hover{
-    background-color: black;
-    color: white;
-}
-.listLink:hover{
-    color: white;
+    background-color: var(--night);
+    font-weight: bold;
+    color: var(--yellow);
+    transition: 0.75s all ease-in-out;
 }
 
 .infoHeader{
     width: 100%;
-    height: 100vh;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--night);
+}
+
+.infoHeader__container{
+    text-align: center;
 }
 
 .imgPerfil{
-    width: 150px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid var(--gray);
+    padding: 5px;
+    margin-bottom: 20px;
+    filter: grayscale(50%);
+}
+
+.imgPerfil:hover{
+    transition: 0.75s all ease-in-out;
+    border: 10px solid var(--yellow);
+    filter: grayscale(10%);
+}
+
+.info{
+    font-size: 2.5rem;
+    color: var(--yellow);
+}
+
+.info h1{
+    margin-bottom: 20px;
 }
