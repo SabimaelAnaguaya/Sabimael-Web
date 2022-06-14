@@ -28,13 +28,10 @@ header{
     height: 100vh;
 }
 
-.container{
-    width: 100%;
-}
-
 .navHeader{
-    height: 100px;
-    background-color: rgb(19, 156, 110);
+    width: 100%;
+    height: 70px;
+    background-color: rgb(31, 32, 32);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,53 +42,58 @@ header{
     display: flex;
     align-items: center;
     color: white;
-    font-size: 4rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     padding-left: 40px;
 }
 
 .logo{
-    width: 90px;
+    width: 50px;
+    padding-right: 10px;
 }
 
 #btnNav{
     display: none;
-    
 }
 
 .labelNav{
     padding-right: 40px;
+    color: white;
 }
 
 #btnNav:checked ~ .navBar{
     visibility: visible;
 }
 
+
 .navBar{
     width: 100%;
     height: fit-content;
     position: fixed;
-    top: 100px;
+    top: 70px;
     text-align: center;
     visibility: collapse;
-    background-color: aquamarine;
 }
 
 .listItem{ 
     width: 100%;
     padding: 8px 0;
-}
-
-.listLink{
-    width: 100%;
+    color: black;
 }
 
 .listItem:hover{
-    padding: 15px 0;
-    background-color: black;
-    
-}
-.listLink:hover{
     background-color: black;
     color: white;
+}
+.listLink:hover{
+    color: white;
+}
+
+.infoHeader{
+    width: 100%;
+    height: 100vh;
+}
+
+.imgPerfil{
+    width: 150px;
 }
