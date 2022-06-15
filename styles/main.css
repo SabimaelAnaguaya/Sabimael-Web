@@ -37,9 +37,7 @@ li{
     background: var(--night);
     padding: 10px;
 }
-.arrow{
-    color: var(--night);
-}
+
 .linkLogo{
     display: flex;
     align-items: center;
@@ -66,10 +64,14 @@ li{
     height: 20px;
     display: block;
     text-align: center;
-    background-color: var(--gray);
+    background-color: var(--black);
     font-size: 1.6rem;
     color: gray;
     transition: .75s all ease;
+}
+
+.arrow{
+    color: var(--yellow);
 }
 
 .listLink{
@@ -84,9 +86,13 @@ li{
     height: 150px;
 }
 
+.navBar:hover .linkTop{
+    color: var(--yellow);
+}
 .navBar:hover .listLink{
     display: block;
 }
+
 
 .listItem:hover{
     background: var(--night);
