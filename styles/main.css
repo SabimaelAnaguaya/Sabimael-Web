@@ -16,12 +16,6 @@ html{
     font-size: 62.5%;
 }
 
-/*
-    ===========================================
-    HEADER
-    ===========================================
-*/
-
 a{
     text-decoration: none;
     color: black;
@@ -30,108 +24,98 @@ a{
 li{
     list-style: none;
 }
-header{
-    width: 100%;
-    height: 100vh;
-}
+
+/*
+    ===========================================
+    HEADER / navHeader
+    ===========================================
+*/
 
 .navHeader{
     width: 100%;
-    height: 10%;
-    background-color: var(--night);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 2rem;
+    height: fit-content;
+    background: var(--night);
+    padding: 10px;
 }
-
+.arrow{
+    color: var(--night);
+}
 .linkLogo{
     display: flex;
     align-items: center;
     color: var(--yellow);
-    font-size: 2.5rem;
+    font-size: 2rem;
+    justify-content: center;
     text-transform: uppercase;
-    padding-left: 40px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .logo{
-    width: 50px;
-    padding-right: 10px;
+    width: 35px;
+    margin-right: 15px;
 }
 
-#btnNav{
-    display: none;
-}
-
-.labelNav{
-    font-size: 2.8rem;
-    padding-right: 40px;
-    color: var(--yellow);
-}
-
-#btnNav:checked ~ .navBar{
-    visibility: visible;
-}
-
+/*
+    ===========================================
+    HEADER / navBar
+    ===========================================
+*/
 
 .navBar{
     width: 100%;
-    height: fit-content;
-    position: absolute;
-    top: 70px;
+    height: 20px;
+    display: block;
     text-align: center;
-    visibility: collapse;
-    background-color: var(--black);
+    background-color: var(--gray);
+    font-size: 1.6rem;
+    color: gray;
+    transition: .75s all ease;
 }
 
-.listItem{ 
-    width: 100%;
-    padding: 20px 0;
-    font-size: larger;
-    color: var(--gray);
+.listLink{
+    display:none;
+}
+.listItem{
+    padding: 10px 0px;
+    color: var(--night);
+}
+
+.navBar:hover{
+    height: 150px;
+}
+
+.navBar:hover .listLink{
+    display: block;
 }
 
 .listItem:hover{
-    background-color: var(--night);
-    font-weight: bold;
+    background: var(--night);
     color: var(--yellow);
-    transition: 0.75s all ease-in-out;
+    transition: 0.5s all ease-in-out;
 }
+
+/*
+    ===========================================
+    HEADER / info
+    ===========================================
+*/
 
 .infoHeader{
     width: 100%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--night);
-}
-
-.infoHeader__container{
+    height: auto;
     text-align: center;
+    background-color: var(--night);
+    padding: 50px;
 }
 
 .imgPerfil{
-    width: 300px;
+    width: 155px;
     border-radius: 50%;
-    border: 10px solid var(--gray);
+    border: 5px solid var(--yellow);
     padding: 5px;
-    margin-bottom: 20px;
-    filter: grayscale(50%);
-}
-
-.imgPerfil:hover{
-    transition: 0.75s all ease-in-out;
-    border: 10px solid var(--yellow);
-    filter: grayscale(10%);
 }
 
 .info{
-    font-size: 2.5rem;
+    margin-top: 10px;
     color: var(--yellow);
-}
-
-.info h1{
-    margin-bottom: 20px;
 }
