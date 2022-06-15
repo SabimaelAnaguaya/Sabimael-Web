@@ -31,6 +31,11 @@ li{
     ===========================================
 */
 
+header{
+    width: 100%;
+    height: 100vh;
+}
+
 .navHeader{
     width: 100%;
     height: fit-content;
@@ -61,16 +66,17 @@ li{
 
 .navBar{
     width: 100%;
-    height: 20px;
+    height: 30px;
     display: block;
     text-align: center;
-    background-color: var(--black);
+    background-color: var(--night);
     font-size: 1.6rem;
     color: gray;
     transition: .75s all ease;
 }
 
 .arrow{
+    margin-top: 7px;
     color: var(--yellow);
 }
 
@@ -84,6 +90,7 @@ li{
 
 .navBar:hover{
     height: 150px;
+    background: var(--black);
 }
 
 .navBar:hover .linkTop{
@@ -108,20 +115,33 @@ li{
 
 .infoHeader{
     width: 100%;
-    height: auto;
     text-align: center;
     background-color: var(--night);
-    padding: 50px;
+    padding: 10px 0 20px 0;
 }
 
 .imgPerfil{
     width: 155px;
     border-radius: 50%;
-    border: 5px solid var(--yellow);
+    border: 5px solid var(--gray);
     padding: 5px;
 }
 
 .info{
     margin-top: 10px;
     color: var(--yellow);
+    font-size: 1rem;
+}
+
+.info p{
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+.imgPerfil:hover{
+    width: 155px;
+    border-radius: 50%;
+    border: 5px solid var(--yellow);
+    padding: 5px;
+    transition: 0.75s ease;
 }
