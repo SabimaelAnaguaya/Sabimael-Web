@@ -195,3 +195,34 @@ li{
 .tarjeta:hover .tarjeta__info{
     color: var(--night);
 }
+
+/*
+    ===========================================
+    FOOTER / 
+    ===========================================
+*/
+.footer{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.imgFooter{
+    max-width: 70px;
+    padding: 10px;
+}
+
+.perfilFooter{
+    max-width: 80px;
+    border-radius: 50%;
+    border: 5px solid var(--yellow);
+}
