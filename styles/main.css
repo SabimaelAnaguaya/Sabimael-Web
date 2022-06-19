@@ -25,6 +25,11 @@ li{
     list-style: none;
 }
 
+body{
+    width: 100%;
+    height: fit-content;
+}
+
 /*
     ===========================================
     HEADER / navHeader
@@ -114,13 +119,14 @@ li{
     text-align: center;
     background-color: var(--night);
     padding: 10px 0 20px 0;
+    
 }
 
 .imgPerfil{
     width: 155px;
     border-radius: 50%;
-    border: 5px solid var(--gray);
-    padding: 5px;
+    border: 5px solid var(--black);
+    background-color: var(--gray);
 }
 
 .info{
@@ -138,7 +144,7 @@ li{
     width: 155px;
     border-radius: 50%;
     border: 5px solid var(--yellow);
-    padding: 5px;
+
     transition: 0.75s ease;
 }
 
@@ -150,11 +156,15 @@ li{
 
 .main{
     width: 100%;
-    height: fit-content;
-    background: var(--gray);
-    
+    height: 100%;
+    padding: 20px;
+    background: var(--black);
+    text-align: center;
 }
-
+.title{
+    padding-top: 20px;
+    color: var(--yellow);
+}
 .tarjetas{
     width: 100%;
     padding: 10px;
@@ -167,7 +177,6 @@ li{
     margin: 15px;
     background-color: var(--gray);
     border-radius: 10px;
-    box-shadow: 0px 0px 15px 2px var(--night);
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -184,7 +193,7 @@ li{
 .tarjeta__info{
     min-width: 10px;
     padding: 10px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     color: var(--black);
 }
 
@@ -196,6 +205,12 @@ li{
     color: var(--night);
 }
 
+.tarjeta:hover{
+    background-color: whitesmoke;
+    width: 100px;
+    box-shadow: 0px 0px 15px 2px var(--gray);
+}
+
 /*
     ===========================================
     FOOTER / 
@@ -203,17 +218,18 @@ li{
 */
 .footer{
     width: 100%;
-    height: fit-content;
+    height: 150PX;
     padding: 10px 20px;
-    background: var(--black);
+    background: var(--night);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around
 }
 .footerWrap{
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .imgFooter{
