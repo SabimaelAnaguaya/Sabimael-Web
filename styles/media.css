@@ -1,0 +1,46 @@
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+    .navHeader{
+        width: 100%;
+        height: fit-content;
+        background: var(--night);
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navBar{
+        width: 100%;
+        font-size: 1.6rem;
+        display: block;
+    }
+
+    .listItems{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .listLink{
+        padding: 8px 10px;
+        border-radius: 10px;
+        color: var(--yellow);
+        font-weight: bold;
+        margin-left: 20px;
+    }
+
+    .listLink:hover{
+        background-color: var(--black);
+        transition: .5s all ease-in-out;
+    }
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+
+ } 

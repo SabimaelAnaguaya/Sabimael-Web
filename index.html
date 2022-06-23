@@ -9,34 +9,40 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/media.css">
     <title>Sabimael | WebSite</title>
 
 </head>
 <body>
     <header class="header">
         <section class="navHeader">
-                <a href="" class="linkLogo">
-                    <img src="./styles/img/logo.svg" alt="logo" class="logo">
-                    Sabimael
-                </a>
-        </section>
+            
+                <div class="linkLogo">
+                    <a href="" class="link">
+                        <img src="./styles/img/logo.svg" alt="logo" class="logo">
+                        Sabimael
+                    </a>
+                </div>
 
-        
-            <nav class="navBar">
-                
-                <ul class="listItems">
-                    <i class="fa fa-angle-down arrow"></i>
-                    <a href="" class="listLink " >
-                        <li class="listItem linkTop">HOME</li>
-                    </a>
-                    <a href="" class="listLink">
-                        <li class="listItem">PROJECTS</li>
-                    </a>
-                    <a href="" class="listLink">
-                        <li class="listItem">ABOUT ME</li>
-                    </a>
-                </ul>
-            </nav>
+                <nav class="navBar">
+                    <ul class="listItems">
+                        <input type="checkbox" id="btnCheck" hidden>
+                        <label for="btnCheck">
+                            <div class="btnActivator"></div>
+                        </label>
+
+                        <a href="" class="listLink top" >
+                            <li class="listItem ">HOME</li>
+                        </a>
+                        <a href="" class="listLink mid">
+                            <li class="listItem">PROJECTS</li>
+                        </a>
+                        <a href="" class="listLink bott">
+                            <li class="listItem">ABOUT ME</li>
+                        </a>
+                    </ul>
+                </nav>
+        </section>
 
         <div class="infoHeader">
             <img src="./styles/img/perfil.png"class="imgPerfil" alt="">
@@ -44,6 +50,7 @@
                 <h1>Hi, My name is Sabimael</h1>
                 <p>I am a Front-End Developer<br>Welcome to my WebSite</p>
             </div>
+
         </div>
     </header>
 

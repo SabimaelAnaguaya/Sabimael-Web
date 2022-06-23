@@ -42,16 +42,23 @@ body{
     height: fit-content;
     background: var(--night);
     padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .linkLogo{
+    width: 100%;
     display: flex;
     align-items: center;
-    color: var(--yellow);
     font-size: 2rem;
-    justify-content: center;
     text-transform: uppercase;
     font-weight: bolder;
+}
+
+.link{
+    color:var(--yellow);
+    display: flex;
+    align-items: center;
 }
 
 .logo{
@@ -61,52 +68,80 @@ body{
 
 /*
     ===========================================
-    HEADER / navBar
+    HEADER / navBar | mobile
     ===========================================
 */
 
-.navBar{
-    width: 100%;
-    height: 30px;
-    display: block;
-    text-align: center;
-    background-color: var(--night);
-    font-size: 1.6rem;
-    color: gray;
-    transition: .75s all ease;
-}
+    .btnActivator{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--black);
+        position: relative;
+        cursor: pointer;
+    }
 
-.arrow{
-    margin-top: 7px;
-    color: var(--yellow);
-}
-
-.listLink{
-    display:none;
-}
-.listItem{
-    padding: 10px 0px;
-    color: var(--night);
-}
-
-.navBar:hover{
-    height: 150px;
-    background: var(--black);
-}
-
-.navBar:hover .linkTop{
-    color: var(--yellow);
-}
-.navBar:hover .listLink{
-    display: block;
-}
+    .listItems{
+        display: flex;
+        justify-content: center;
+    }
+    .listItem{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: var(--gray);
+        color: var(--night);
+        font-size: 0;
+        text-align: center;
+        background: var(--gray);
+    }
 
 
-.listItem:hover{
-    background: var(--night);
-    color: var(--yellow);
-    transition: 0.5s all ease-in-out;
-}
+
+    .top, .mid, .bott{
+        visibility: collapse;
+        position: absolute;
+    }
+
+    #btnCheck:checked ~ .top{
+        visibility: visible;
+        transform: translateY(50px);
+        transition: 0.5s all ease-in-out;
+
+    }
+
+    #btnCheck:checked ~ .mid{
+        visibility: visible;
+        transform: translateY(100px);
+        transition: 0.75s all ease-in-out;
+
+    }
+
+    #btnCheck:checked ~ .bott{
+        visibility: visible;
+        transform: translateY(150px);
+        transition: 1s all ease-in-out;
+
+    }
+
+    #btnCheck:not(:checked) ~ .top{
+        visibility: collapse;
+        transition: 1s all ease-in-out;
+
+    }
+
+    #btnCheck:not(:checked) ~ .mid{
+        visibility: collapse;
+        transition: 0.75s all ease-in-out;
+
+    }
+
+    #btnCheck:not(:checked) ~ .bott{
+        visibility: collapse;
+        transition: .5s all ease-in-out;
+
+    }
+
 
 /*
     ===========================================
