@@ -1,0 +1,18 @@
+.mainAbout{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mainAbout__info{
+    width: 60%;
+    color: var(--yellow);
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.mainAbout__info p{
+    margin-top: 10px;
+}
