@@ -199,8 +199,9 @@ body{
 .imgPerfil{
     width: 155px;
     border-radius: 50%;
-    border: 5px solid var(--black);
-    background-color: var(--gray);
+    border: 5px solid var(--gray);
+    background-color: var(--black);
+    box-shadow: 0px 0px 15px 2px var(--gray);
 }
 
 .info{
