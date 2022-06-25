@@ -5,8 +5,8 @@
     place-content: center;
 }
 .mainAbout{
-    width: 90%%;
-    padding: 40px;
+    width: 100%;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -14,11 +14,9 @@
     justify-content: space-around;
 }
 .mainAbout__info{
-    width: 60%;
+    max-width: 300px;
 }
-.mainAbout__info > p{
-    margin:0  50px ;
-}
+
 .mainAbout__info, .mainAbout__cards{
     color: var(--yellow);
     font-size: 1.6rem;
