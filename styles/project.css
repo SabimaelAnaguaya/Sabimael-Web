@@ -1,0 +1,36 @@
+.main > h1{
+    color:var(--yellow);
+    margin-bottom: 10px;
+}
+
+.mainProject{
+    width: 100%;
+
+}
+
+.cardsProject{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    background-color: var(--gray);
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+}
+.cardsProject > h1{
+    color: var(--yellow);
+}
+.titleCard{
+    width: fit-content;
+    padding: 8px 9px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    background: var(--gray);
+}
+.cardPJ{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: var(--night);
+}
