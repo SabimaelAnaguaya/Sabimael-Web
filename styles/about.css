@@ -1,17 +1,30 @@
-.mainAbout{
+.main{
     width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+.mainAbout{
+    width: 90%%;
+    padding: 40px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    text-align: center;
     justify-content: space-around;
 }
-
 .mainAbout__info{
     width: 60%;
+}
+.mainAbout__info > p{
+    margin:0  50px ;
+}
+.mainAbout__info, .mainAbout__cards{
     color: var(--yellow);
     font-size: 1.6rem;
     font-weight: 300;
 }
+
 
 .mainAbout__info p{
     margin-top: 10px;
