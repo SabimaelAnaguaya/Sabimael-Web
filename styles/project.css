@@ -5,12 +5,14 @@
 
 .mainProject{
     width: 100%;
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .cardsProject{
-    width: fit-content;
-    height: 300px;
+    max-width: 700px;
+    height: fit-content;
     margin: auto;
     padding: 20px;
     background-color: var(--gray);
@@ -28,37 +30,87 @@
 .titleCard{
     width: fit-content;
     padding: 8px 9px;
-    border-radius: 20px;
-    border-bottom-right-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     background: var(--gray);
+    
 }
-.cardPJ{
-    width: 150px;
-    height: 200px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: var(--night);
-    color: var(--yellow);
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column ;
+
+.containerCard {
+    max-width: 700px;
     text-align: center;
-}
-
-.cardPJ > img{
-    width: 100%;
-    padding: 10px;
-    border-radius: 20px;
-}
-
-.cardPJ__info{
+    -webkit-perspective: 800px;
+    perspective: 800px;
+  }
+  
+  .card {
+    width: 250px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .face {
+    position: absolute;
     width: 100%;
     height: 100%;
     padding: 20px;
-    border-radius: 10px;
+    border-radius:20px;
+    text-align: center;
+    color: var(--yellow);
+    font-size: 1.6rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    background-color: var(--night);
+  }
+  
+  .imgCard > img{
+    width: 100%;
+    padding: 20px;
+    border-radius: 50px;
+  }
+
+  .back {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
     background-color: var(--black);
-    position: absolute;
-    display: ;
-}
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  
+  .card:hover {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+
+  .btnCard{
+    width: 100px;
+    height: 80px;
+    padding: 8px 10px;
+    margin-top: 20px;
+    background-color: var(--night);
+    color: var(--gray);
+    border-radius: 10px;
+  }
+
+  .btnCard:hover{
+    background-color: var(--black);
+    color: var(--yellow);
+    box-shadow: 1px 1px 10px 10px var(--night);
+  }
