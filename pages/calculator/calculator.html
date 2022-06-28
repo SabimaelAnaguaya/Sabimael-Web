@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/media.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculator | Platzi</title>
+</head>
+<body>
+    <header class="header">
+        <section class="navHeader">
+
+                <div class="linkLogo">
+                    <a href="./index.html" class="link">
+                        <img src=".../../../../styles/img/logo.svg" alt="logo" class="logo">
+                        Sabimael
+                    </a>
+                </div>
+
+                <nav class="navBar navBar--mobile">
+                    <ul class="listItems">
+                        <input type="checkbox" id="btnCheck" hidden>
+                        
+                        <label for="btnCheck">
+                            <div class="btnActivator">
+                                <div class="line lineTop"></div>
+                                <div class="line lineMid"></div>
+                                <div class="line lineBott"></div>
+                            </div>
+                        </label>
+
+                        <a href="../../index.html" class="listLink top" >
+                            <li class="listItem ">HOME</li>
+                        </a>
+                        <a href="../../pages/projects.html" class="listLink mid">
+                            <li class="listItem">PROJECTS</li>
+                        </a>
+                        <a href="../../pages/aboutme.html" class="listLink bott">
+                            <li class="listItem">ABOUT ME</li>
+                        </a>
+                    </ul>
+                </nav>
+        </section>
+    </header>
+    <main>
+        <section class="container__areaPerimetro">
+            <div class="cuadrado">
+
+                <h3>Area y Perimetro del Cuadrado </h3>
+                <form>
+                    <label for="inputCuadrado">Lado: </label>
+                    <input type="number" id="inputCuadrado">
+                    <button type="button" onclick="calcularPerimetroAreaCuadrado()">Calcular</button>: 
+                    <div class="resultContainer">
+                        <p>El perimetro es: </p>
+                        <p id="resultPerimeter"></p>
+                    </div>
+                    <div class="resultContainer">
+                        <p>El area es: </p>
+                        <p id="resultArea"></p>
+                    </div>
+    
+                </form>
+            
+            </div>
+
+        </section>
+    </main>
+        
+    <script src="./javascript/function.js"></script>
+</body>
+</html>
