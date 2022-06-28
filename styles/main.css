@@ -124,6 +124,7 @@ body{
     .top, .mid, .bott{
         visibility: collapse;
         position: absolute;
+        z-index: 1;
     }
 
 
