@@ -1,0 +1,46 @@
+main{
+    width: 100%;
+    height: 100%;
+    background-color: var(--gray);
+    padding: 20px;
+}
+
+.containerProject{
+    width: 365px;
+    height: fit-content;
+    line-height: 40px;
+    border-radius: 20px;
+    background-color: var(--black);
+    color: var(--yellow);
+    font-size: 1.6rem; ;
+    padding: 20px;
+    text-align: center;
+}
+
+.inputTxt{
+    width: 100px;
+    text-align: center;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    color: var(--night);
+    border: 2px solid var(--gray);
+    background: rgb(220, 220, 220);
+}
+
+.btnCalc{
+    font-size: 1.6rem;
+    padding: 3px 5px;
+    border-radius: 6px;
+    background: var(--gray);
+}
+
+.btnCalc:hover{
+    background: var(--night);
+    color: var(--yellow);
+}
+
+.resultContainer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

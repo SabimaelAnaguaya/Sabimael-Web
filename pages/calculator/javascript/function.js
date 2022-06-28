@@ -59,8 +59,8 @@ function calcularPerimetroAreaCuadrado(){
     const perimetro = perimetroCuadrado(value);
     const area = areaCuadrado(value);
 
-    perimetroCalc.innerText = perimetro;
-    areaCalc.innerText = area;
+    perimetroCalc.innerText = perimetro+" cm";
+    areaCalc.innerText = area+" cm2";
 }
 
 
