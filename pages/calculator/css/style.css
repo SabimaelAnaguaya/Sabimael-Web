@@ -5,7 +5,11 @@ main{
     display: flex;
     justify-content: center;
 }
-
+.containerCalculadora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .containerProject{
     max-width: 300px;
     height: fit-content;
@@ -52,6 +56,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
