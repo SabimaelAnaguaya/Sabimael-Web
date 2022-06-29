@@ -47,25 +47,79 @@
     </header>
     <main>
         <section class="container__areaPerimetro">
-
-            <div class="cuadrado containerProject">
-                <h3>Area y Perimetro del Cuadrado </h3>
-                <form class="fromCalc">
-                    <label for="inputCuadrado">Lado: </label>
-                    <input type="number" class="inputTxt" id="inputCuadrado" placeholder="5 cm">
+            <h2>AREA Y PERIMETRO FIGURAS</h2>
+            <article class="containerCalc">
+                
+                <div class="cuadrado containerProject">
+                    <h3>Area y Perimetro del Cuadrado </h3>
+                    <form class="fromCalc">
+                        <label for="inputCuadrado">Lado: </label>
+                        <input type="number" class="inputTxt" id="inputCuadrado" placeholder="5 cm">
+                        
+                        <button type="button" class="btnCalc" onclick="calcularPerimetroAreaCuadrado()">Calcular</button> 
+    
+                        <div class="resultContainer">
+                            <p>El perimetro es: </p>
+                            <p id="resultPerimeterCua"></p>
+                        </div>
+                        <div class="resultContainer">
+                            <p>El area es: </p>
+                            <p id="resultAreaCua"></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="triangulo containerProject">
+                    <h3>Area y Perimetro del Triángulo </h3>
+                    <form class="formCalc">
+                        <div>
+                            <label for="inputLadoTriangulo1" >Lado: </label>
+                            <input type="number" class="inputTxt" id="inputLadoTriangulo1" placeholder="5 cm">
+                        </div>
+                        <div>
+                        
+                            <label for="inputLadoTriangulo2" >Lado: </label>
+                            <input type="number" class="inputTxt" id="inputLadoTriangulo2" placeholder="5 cm">
+                        </div>
+                        <div>
+                            <label for="inputBaseTriangulo" >Base: </label>
+                            <input type="number" class="inputTxt" id="inputBaseTriangulo" placeholder="5 cm">
+                        </div>
                     
-                    <button type="button" class="btnCalc" onclick="calcularPerimetroAreaCuadrado()">Calcular</button> 
-
-                    <div class="resultContainer">
-                        <p>El perimetro es: </p>
-                        <p id="resultPerimeter"></p>
-                    </div>
-                    <div class="resultContainer">
-                        <p>El area es: </p>
-                        <p id="resultArea"></p>
-                    </div>
-                </form>
-            </div>
+                        <button type="button" class="btnCalc" onclick="calcularPerimetroAreaTriangulo()">Calcular</button> 
+    
+                        <div class="resultContainer">
+                            <p>El perimetro es: </p>
+                            <p id="resultPerimeterTri"></p>
+                        </div>
+                        <div class="resultContainer">
+                            <p>El area es: </p>
+                            <p id="resultAreaTri"></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="triangulo containerProject">
+                    <h3>Area y Perimetro del Triángulo </h3>
+                    <form class="formCalc">
+                        <div>
+                            <label for="inputRadio" >Radio: </label>
+                            <input type="number" class="inputTxt" id="inputRadio" placeholder="5 cm">
+                        </div>
+                    
+                        <button type="button" class="btnCalc" onclick="calcularPerimetroAreaCirculo()">Calcular</button> 
+    
+                        <div class="resultContainer">
+                            <p>El perimetro es: </p>
+                            <p id="resultPerimeterCir"></p>
+                        </div>
+                        
+                        <div class="resultContainer">
+                            <p>El area es: </p>
+                            <p id="resultAreaCir"></p>
+                        </div>
+                    </form>
+                </div>
+            </article>
+            
 
         </section>
     </main>

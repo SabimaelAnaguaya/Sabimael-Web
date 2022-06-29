@@ -30,6 +30,7 @@ main{
 }
 
 .btnCalc{
+    width: 120px;
     font-size: 1.6rem;
     padding: 3px 5px;
     border-radius: 6px;
@@ -45,4 +46,17 @@ main{
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+
+.containerCalc{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.formCalc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
