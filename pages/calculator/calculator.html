@@ -52,10 +52,11 @@
                 
                 <div class="cuadrado containerProject">
                     <h3>Area y Perimetro del Cuadrado </h3>
-                    <form class="fromCalc">
+                    <form class="formCalc">
+                        <div>
                         <label for="inputCuadrado">Lado: </label>
                         <input type="number" class="inputTxt" id="inputCuadrado" placeholder="5 cm">
-                        
+                        </div>
                         <button type="button" class="btnCalc" onclick="calcularPerimetroAreaCuadrado()">Calcular</button> 
     
                         <div class="resultContainer">
@@ -122,8 +123,9 @@
 
             <h2>PORCENTAJES</h2>
             <article class="containerCalc">
-                <div class="containerProject">
+                <div class="containerProject descuento">
                     <form class="formCalc">
+                        <h3>Descuento Producto</h3>
                         <div>
                         <label for="inputPrice">Precio: </label>
                         <input type="number" class="inputTxt" id="inputPrice">
@@ -137,7 +139,7 @@
                         <button type="button" class="btnCalc" onclick="calcularPrecioTotal()">Calcular</button>
                         
                         <div class="resultContainer">
-                            <p>El precio total con descuento es: </p>
+                            <p>El precio a pagar es: </p>
                             <p id="resultPrice"></p>
                         </div>
                     </form>
