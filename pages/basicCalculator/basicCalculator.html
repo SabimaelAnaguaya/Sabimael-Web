@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Sabimael | Calculadora Basica</title>
+    </head>
+    <body>
+        <section class="mainContainer">
+            <div class="titleCalculator">
+                <h1>Calculadora Básica</h1>
+            </div>
+            <div class="boxInput">
+                <input class="inputNum" type="text" id="inputNumber" placeholder="0" disabled>
+            </div>
+            <div class="erase">
+                <input class="number" type="button" value="C" onclick="erase()" >
+                <input class="number" type="button" value="AC" onclick="eraseAll()">
+            </div>
+            <div class="boxNumbers">
+                <input class="number" type="button" value="7" onclick="addNum('7')">
+                <input class="number" type="button" value="8" onclick="addNum('8')">
+                <input class="number" type="button" value="9" onclick="addNum('9')">
+                <input class="number" type="button" value="/" onclick="addNum('/')">
+
+                <input class="number" type="button" value="4" onclick="addNum('4')">
+                <input class="number" type="button" value="5" onclick="addNum('5')">
+                <input class="number" type="button" value="6" onclick="addNum('6')">
+                <input class="number" type="button" value="*" onclick="addNum('*')">
+                
+                <input class="number" type="button" value="1" onclick="addNum('1')">
+                <input class="number" type="button" value="2" onclick="addNum('2')">
+                <input class="number" type="button" value="3" onclick="addNum('3')">
+                <input class="number" type="button" value="-" onclick="addNum('-')">
+
+                <input class="number" type="button" value="." onclick="addNum('.')">
+                <input class="number" type="button" value="0" onclick="addNum('0')">
+                <input class="number" type="button" value="=" onclick="getResult()">
+                <input class="number" type="button" value="+" onclick="addNum('+')">
+            </div>
+            
+        </section>
+        <script src="./script.js"></script>
+    </body>
+</html>
