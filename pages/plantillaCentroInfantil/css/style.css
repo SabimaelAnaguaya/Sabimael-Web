@@ -1,0 +1,162 @@
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: var(--white);
+}
+
+.container{
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 30px gray;
+}
+
+.welcome{
+    display:flex;
+    flex-wrap: wrap;
+    background: var(--green);
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeInfo{
+    max-width: 400px;
+    font-size: 1.6rem;
+    margin: 20px;
+}
+
+.welcomeInfo > h2{
+    text-align: center;
+    margin-bottom: 10px ;
+}
+
+.welcomeInfo > p{
+    text-align: justify;
+    margin-bottom: 10px ;
+}
+
+.welcomeInfo > ul{
+    text-align: start ;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.welcomeInfo ul > li{
+    list-style: circle;
+    padding-left: 10px;
+}
+
+.welcomeInfo{
+    text-align: center;
+}
+
+.btn{
+    padding: 8px 10px;
+    background: var(--white);
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background: green;
+    color: white;
+}
+
+.welcomeImg{
+    max-width: 450px;
+    justify-self: center;
+    margin: 20px;
+}
+
+.welcomeImg > img{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.offer{
+    display:flex;
+    flex-wrap: wrap;
+    background: var(--peach);
+    justify-content: center;
+    align-items: center;
+}
+
+.offerInfo{
+    max-width: 90%;
+    font-size: 1.6rem;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.offerInfo > h2{
+    width: 100%;
+    text-align: center;
+}
+
+.offerInfo__grid{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.offerInfo__gridItem{
+    max-width: 200px;
+    margin: 10px;
+}
+
+/*
+    ==================================
+    FOOTER
+    ==================================
+*/
+
+.footerInfo{
+    width: 100%;
+    height: fit-content;
+    background: var(--blue);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 1.6rem;
+}
+
+.imgContainer{
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo{
+    width: 100%;
+    padding: 0 50px;
+}
+
+.newsContainer{
+    max-width:600px;
+    height: fit-content;
+    padding: 20px;
+}
+
+.footerOwn{
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 5px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.ownLink{
+    color: white;
+}
