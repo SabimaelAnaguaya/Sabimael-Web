@@ -1,3 +1,7 @@
+h2{
+    font-size: 3rem;
+}
+
 .main__actividades{
     flex-wrap: wrap;
     justify-content:center ;
@@ -22,6 +26,7 @@
 
 .galeryBox{
     width: 90%;
+    height: 500px;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -30,10 +35,12 @@
     padding: 10px 0;
     border-radius: 30px;
     box-shadow: -1px -1px 10px 5px gray;
+    overflow: scroll;
 }
 
 .galeryBox img{
     width: 150px;
+    height: 150px;
     cursor: pointer;
     border-radius: 10px;
 
@@ -41,7 +48,7 @@
 
 .bigBox{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 20px;
     background-color: rgb(0,0,0,.5);
     position: fixed;
@@ -49,10 +56,11 @@
     top: 0;
     align-items: center;
     display: none;
+    transition: 0.5s all ease-in-out;
 }
 
 .bigBox img{
-    height: 80%;
+    width: 80%;
     margin: auto;
 }
 
@@ -70,7 +78,7 @@
     SECCION ACTIVIDADES
 */
 .cards__actividades{
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -78,7 +86,8 @@
 }
 .actividadCard{
     position: relative;
-    width: 300px;
+    width: 90%;
+    max-width: 300px;
     height: 400px;
     background: #000;
     border-top-right-radius: 20px;
@@ -144,7 +153,8 @@
     gap: 20px;
 }
 .cardTaller{
-    width: 350px;
+    width: 80%;
+    max-width: 350px;
     height: 250px;
     background-color: aliceblue;
     position: relative ;
@@ -172,6 +182,7 @@
     color: white;
     font-size: 3.6rem;
     transition: .75s all ease-in-out;
+    text-align: center;
 }
 
 .cardTaller__info{

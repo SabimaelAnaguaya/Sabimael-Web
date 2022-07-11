@@ -1,3 +1,7 @@
+h2{
+    font-size: 3rem;
+}
+
 .news__container{
     width: 100%;
     height: fit-content;
@@ -10,7 +14,8 @@
 }
 .card {
     position: relative;
-    width: 360px;
+    width: 80%;
+    max-width: 300px;
     height: 400px;
     background: #000;
     border-top-right-radius: 20px;
@@ -45,6 +50,7 @@
     border-bottom-right-radius: 20px;
     transform-origin: left;
     transform: perspective(2000px) rotateY(-90deg);
+    overflow: scroll;
 }
 .card:hover .details {
     transform: perspective(2000px) rotateY(0deg);
