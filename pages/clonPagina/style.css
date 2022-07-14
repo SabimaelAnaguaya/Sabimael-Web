@@ -1,0 +1,142 @@
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+.header{
+    height: 72px;
+    position: fixed;
+   
+}
+.navbar__bg{
+    background-color: rgb(237 56 51);
+    
+}
+
+.navbar__nav{
+    list-style: none;
+    gap: 20px; 
+    
+}
+.img__nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.icon{
+    font-size: 30px;
+}
+
+.navbar__aside{
+    position: absolute;
+    padding: 100px !important;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    
+}
+
+.nav__item{
+    width: 88px;
+    height: 88px;
+    background-color: rgb(237 56 51);
+}
+
+.navbar-nav__nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    visibility: visible;
+    font-size: 12px;
+    margin-top: 72px;
+    z-index: 99;
+    position: sticky;
+}
+
+.nav__item:hover{
+    background-color: rgb(195, 45, 40);
+}
+
+/*MAIN SECTION*/
+.main__container{
+    position: relative;
+    top: 80px;
+    flex-direction: column;
+    z-index: -2;
+}
+
+.img__game{
+    cursor: pointer !important;
+ 
+}
+.img__game img{
+    width: 100%;
+    
+}
+
+.container__news{
+    width: 100%;
+}
+
+.cardInfo__game{
+    max-width: 350px;
+}
+
+.info__game{
+    font-size: 12px;
+}
+.info__game h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.data__game{
+    color: gray !important;
+}
+
+@media (min-width: 992px) { 
+    .navbar__aside{
+        display: block !important;
+        left: -15px;
+        background: rgb(195, 45, 40);
+        width: 100px;
+        padding: 0 !important;
+        top: 72px;
+    }
+    .navbar-nav__nav{
+        display: flex;
+        flex-wrap: wrap;
+        width: 110px;
+        gap: 0;
+        left: 0;
+        justify-content: center;
+        visibility: visible;
+    }
+
+    .hide__item{
+        display: none !important;
+    }
+    
+    .main__container{
+        
+        left: 95px;
+        
+        width: 90%;
+        flex-direction: row;
+        
+    }
+
+    
+
+    .container__news{
+        width: 550px;
+    }
+ }
