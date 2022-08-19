@@ -1,0 +1,132 @@
+:root{
+    /* color gral */
+    --white: #fff;
+
+    /* colors light mode */
+    --navy: rgb(53, 87, 100);
+    --green: rgb(90, 143, 123);
+    --blue: rgb(129, 202, 207);
+    --yellow: rgb(255, 234, 17);
+
+    /* colors dark mode */
+
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Heebo', sans-serif;
+    font-size: 62.5%;
+}
+/* 
+==========================================
+HEADER SECTION
+==========================================
+*/
+
+/* 
+MENU HAMBURGUESA
+*/
+.menu-open-close{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 25px;
+    left: 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu-open-close .line{
+    width: 100%;
+    height: 5px;
+    background: white;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+/* 
+ESTILOS HEADER
+*/
+.main-header{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(90, 143, 123, .5);
+}
+
+.header-container{
+    position: relative;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--navy);
+    padding: 15px;
+    border-top-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: .5s all ease-in-out;
+}
+
+.close{
+    transform: translateX(-250px);
+    transition: .5s all ease-in-out;
+}
+
+.header-logo{
+    width: 100%;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.header-container picture img{
+    width: 100%;
+    border-radius: 50%;
+    background-color: var(--green); 
+}
+
+.header-nav ul{
+    list-style: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.header-nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+.header-social{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-media{
+    background: #fff;
+    height: 30px;
+    width: 30px;
+}
+.header-social :nth-child(1){
+    -webkit-mask: url(../assets/icons/linkedin.svg);
+}
+.header-social :nth-child(2){
+    -webkit-mask: url(../assets/icons/github.svg) no-repeat 100% 100% / 30px 30px; 
+}
+.header-social :nth-child(3){
+    -webkit-mask: url(../assets/icons/mail.svg);
+}
+.header-social :nth-child(4){
+    -webkit-mask: url(../assets/icons/whatsapp.svg) no-repeat 100% 100% / 30px 30px;
+
+}
