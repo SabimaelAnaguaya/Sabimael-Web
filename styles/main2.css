@@ -13,13 +13,14 @@
 
 }
 
+
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
 html{
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Baloo Paaji 2', cursive;
     font-size: 62.5%;
 }
 /* 
@@ -32,7 +33,7 @@ HEADER SECTION
 MENU HAMBURGUESA
 */
 .menu-open-close{
-    position: absolute;
+    position: fixed;
     width: 25px;
     height: 25px;
     top: 25px;
@@ -47,20 +48,36 @@ MENU HAMBURGUESA
     background: white;
     margin-top: 5px;
     border-radius: 3px;
+    transition: .5s all ease-in-out;
+}
+
+.line1__activated{
+    transform: rotate(45deg);
+    transition: .5s all ease-in-out;
+}
+.line2__activated{
+    position: relative;
+    top: -10px;
+    transform: rotate(-45deg);
+    transition: .5s all ease-in-out;
+}
+.line3__activated{
+    position: relative;
+    border-radius: 50%;
+    width: 8px !important;
+    height: 8px !important;
+    top: -21px;
+    left: 9px;
+    background-color: var(--navy) !important;
+    transition: .5s all ease-in-out;
 }
 
 /* 
 ESTILOS HEADER
 */
-.main-header{
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(90, 143, 123, .5);
-}
 
 .header-container{
-    position: relative;
+    position: fixed;
     width: 250px;
     height: 100vh;
     background-color: var(--navy);
@@ -70,10 +87,12 @@ ESTILOS HEADER
     flex-direction: column;
     justify-content: space-around;
     transition: .5s all ease-in-out;
+    box-shadow: 1px 5px 20px 1px var(--white);
 }
 
 .close{
     transform: translateX(-250px);
+    box-shadow: 0px 0px 0px 0px gray;
     transition: .5s all ease-in-out;
 }
 
@@ -86,9 +105,9 @@ ESTILOS HEADER
 }
 
 .header-container picture img{
-    width: 100%;
+    width: 90%;
     border-radius: 50%;
-    background-color: var(--green); 
+    background: radial-gradient(circle, var(--blue) 0%, var(--navy) 100%);
 }
 
 .header-nav ul{
@@ -105,6 +124,15 @@ ESTILOS HEADER
     line-height: 40px;
 }
 
+.header-nav ul li{
+    transition: 0.5s all ease-in-out;
+}
+.header-nav ul li:hover{
+    border-radius: 10px;
+    background-color: var(--green);
+    transition: 0.7s all ease-in-out;
+}
+
 .header-social{
     display: flex;
     flex-wrap: wrap;
@@ -118,15 +146,51 @@ ESTILOS HEADER
     width: 30px;
 }
 .header-social :nth-child(1){
-    -webkit-mask: url(../assets/icons/linkedin.svg);
+    -webkit-mask: url(../assets/icons/linkedin1.svg);
 }
 .header-social :nth-child(2){
-    -webkit-mask: url(../assets/icons/github.svg) no-repeat 100% 100% / 30px 30px; 
+    -webkit-mask: url(../assets/icons/github1.svg);
 }
 .header-social :nth-child(3){
-    -webkit-mask: url(../assets/icons/mail.svg);
+    -webkit-mask: url(../assets/icons/mail1.svg);
 }
 .header-social :nth-child(4){
-    -webkit-mask: url(../assets/icons/whatsapp.svg) no-repeat 100% 100% / 30px 30px;
+    -webkit-mask: url(../assets/icons/whatsapp1.svg);
 
+}
+
+/* 
+==========================================
+MAIN SECTION
+==========================================
+*/
+
+.main-section{
+    width: 100%;
+    height: 100%;
+}
+
+.introduce{
+    width: 100%;
+    height: 100vh;
+    padding: 100px 30px;
+    background: linear-gradient(180deg, var(--blue) 0%, var(--green) 100%);
+    text-align: right;
+}
+
+.introduce h2{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.introduce h1{
+    font-size: 3rem;
+}
+
+.skill-section{
+    width: 100%;
+    height: 100vh;
+    padding: 100px 30px;
+    background: linear-gradient(180deg, var(--green) 0%, var(--navy) 100%);
+    text-align: right;
 }
