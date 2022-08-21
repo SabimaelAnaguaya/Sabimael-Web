@@ -1,6 +1,12 @@
 document.querySelector('.menu-open-close').addEventListener("click", openMenuBar);
 
+let dialoge = document.querySelector('.dialoge');
 
+setTimeout(showDialog, 500)
+
+function showDialog(){
+    dialoge.classList.add("dialoge-apper")
+}
 
 function openMenuBar (){
     let menuBar = document.querySelector('.header-container');
