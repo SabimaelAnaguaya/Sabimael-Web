@@ -18,6 +18,7 @@ function openMenuBar (){
 
 let dialog1 = document.querySelector('#introDialog');
 let dialog2 = document.querySelector('#aboutDialog');
+let htmlLogo = document.querySelector('#html-logo');
 
 
 const cargarDialogo = (entradas, obs) => {
@@ -37,7 +38,9 @@ const obs = new IntersectionObserver(cargarDialogo, {
 });
 
 
-obs.observe(dialog1)
-obs.observe(dialog2)
+obs.observe(dialog1);
+obs.observe(dialog2);
+obs.observe(htmlLogo);
+
 
 

@@ -300,10 +300,13 @@ MAIN SECTION
     place-items: center;
     overflow: hidden;
 }
-.logo-tool:nth-child(3){
-    height: 50px;
+.logo-tool{
+    width: 70px;
+}
+#html-logo{
+    transform: scale(0);
 }
 
-.logo-tool{
-    height: 70px;
+#css-logo{
+
 }
