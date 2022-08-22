@@ -1,159 +1,88 @@
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {
+
+@media (max-width: 575.98px) {  }
 
 
-    .btnActivator{
+@media (min-width: 767.98px) { 
+    .menu-open-close{
         display: none;
     }
 
-    .listItems{
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .listLink{
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: 4px solid var(--black);
-        background: var(--gray);
-        color: var(--night);
-        font-size: 0;
-        text-align: center;
-        background: var(--gray);
-        display: grid;
-        place-content: center;
-    }
-
-    .top, .mid, .bott{
-        visibility: visible;
-        position: static;
-    }
-
-    #btnCheck:checked ~ .top{
-        visibility: visible;
-        font-size: 1.6rem;
-        width: 80px;
-        border-radius: 20px;
-        transform: none;
-        transition: 0.5s all ease-in-out;
-
-    }
-
-    #btnCheck:checked ~ .mid{
-        visibility: visible;
-        font-size: 1.6rem;
-        width: 100px;
-        border-radius: 20px;
-        transform: none;
-        transition: 0.75s all ease-in-out;
-
-    }
-
-    #btnCheck:checked ~ .bott{
-        visibility: visible;
-        font-size: 1.6rem;
-        width: 120px;
-        border-radius: 20px;
-        transform: none;
-        transition: 1s all ease-in-out;
-
-    }
-
-    #btnCheck:not(:checked) ~ .top{
-        visibility: visible;
-        font-size: 1.6rem;
-        width: 120px;
-        border-radius: 20px;
-        transform: none;
-        transition: 1s all ease-in-out;
-
-    }
-
-    #btnCheck:not(:checked) ~ .mid{
-        visibility: visible;
-        font-size: 1.6rem;
-        width: 120px;
-        border-radius: 20px;
-        transform: none;
-        transition: 1s all ease-in-out;
-
-    }
-
-    #btnCheck:not(:checked) ~ .bott{
-        visibility: visible;
-        font-size: 1.6rem;
-        width: 120px;
-        border-radius: 20px;
-        transform: none;
-        transition: 1s all ease-in-out;
-    }
-    .imgPerfil{
-        width: 250px;
-    }
-
-    .imgPerfil:hover{
-        width: 300px;
-    }
-    /*
-        ==============================
-        MAIN cards
-        ==============================
-    */
-    .tarjetas{
+    .header-container{
+        position:fixed;
         width: 100%;
-        padding: 10px;
+        height: 70px;
+        padding: 0px 20px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        transition: .5s all ease-in-out;
+        box-shadow: none ;
+        z-index: 100;
+        border-top-right-radius: 0;
+        top: -0px;
     }
-    .tarjeta{
-        width: 180px;
-        margin: 15px;
-        background-color: var(--gray);
-        border-radius: 10px;
-        text-align: center;
+
+    .close{
+        transform: translateX(0);
+        box-shadow: none ;
+        transition: .5s all ease-in-out;
+    }
+
+    .header-logo{
+        display: none;
+    }
+
+    .header-nav{
+        width: 70%;
+    }
+    .header-nav ul{
+        width: 100%;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .header-nav ul li{
+        width: 30%;
+        transition: 0.5s all ease-in-out;
+    }
+
+    .header-social{
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-section{
+        margin-top: 70px ;
+        height: calc(100vh - 70px);
+    }
+
+    .introduce{
+        height: calc(100vh - 70px);
+        padding-bottom: 0 !important;
+    }
+
+    .avatar{
+        width: 400px;
+        margin: auto;
+    }
+
+    .introduce h2{
+        font-size: 5rem;
+        font-weight: 700;
     }
     
-    .tarjeta__img{
-        max-width: 150px;
-        max-height: 100px;
-        display: grid;
-        place-content: center;
-        padding: 10px;
-    }
-    
-    .tarjeta__info{
-        min-width: 10px;
-        padding: 10px;
-        font-size: 1.6rem;
-        color: var(--black);
+    .introduce h1{
+        font-size: 4rem;
     }
 
-    .tarjeta:hover{
-        background-color: whitesmoke;
-        width: 182px;
-        box-shadow: 0px 0px 15px 2px var(--gray);
-    }
+}
 
-    .mainAbout{
-        max-width: 900px;
-    }
+@media (max-width: 991.98px) {  }
 
-    .mainAbout_info{
-        font-size: 2rem;
-    }
- }
- 
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {
 
- }
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
+@media (max-width: 1199.98px) {  }
 
- } 
+
+@media (max-width: 1399.98px) {  }

@@ -4,135 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/media.css">
-    <title>Sabimael | WebSite</title>
-
+    <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <section class="navHeader">
+    <div class="menu-open-close">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+    </div>
+    <header class="main-header">
+        <div class="header-container close">
 
-                <div class="linkLogo">
-                    <a href="./index.html" class="link">
-                        <img src="./styles/img/logo.svg" alt="logo" class="logo">
-                        Sabimael
-                    </a>
-                </div>
+            <section  class="header-logo">
+                <picture>
+                    <img src="./styles/img/perfil-min.png" alt="">
+                </picture>
+                <p>Sabimael</p>
+                <p>Front-End Developer</p>
+            </section>
 
-                <nav class="navBar navBar--mobile">
-                    <ul class="listItems">
-                        <input type="checkbox" id="btnCheck" hidden>
-                        
-                        <label for="btnCheck">
-                            <div class="btnActivator">
-                                <div class="line lineTop"></div>
-                                <div class="line lineMid"></div>
-                                <div class="line lineBott"></div>
-                            </div>
-                        </label>
-
-                        <a href="./index.html" class="listLink top" >
-                            <li class="listItem ">HOME</li>
-                        </a>
-                        <a href="./pages/projects.html" class="listLink mid">
-                            <li class="listItem">PROJECTS</li>
-                        </a>
-                        <a href="./pages/aboutme.html" class="listLink bott">
-                            <li class="listItem">ABOUT ME</li>
-                        </a>
-                    </ul>
-                </nav>
-        </section>
-
-        <div class="infoHeader">
-            <img src="./styles/img/perfil-min.png"class="imgPerfil" alt="">
-            <div class="info">
-                <h1>Hi, My name is Sabimael</h1>
-                <p>I am a Front-End Developer<br>Welcome to my WebSite</p>
-            </div>
-
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#introduce">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="">work</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </nav>
+            <section class="header-social">
+                <a href="" class="social-media"></a>
+                <a href="" class="social-media"></a>
+                <a href="" class="social-media"></a>
+                <a href="" class="social-media"></a>
+            </section>
         </div>
     </header>
-
-    <!-- 
-        ===============================================
-        MAIN SECTION
-        ===============================================
-    -->
-
-    <main class="main">
-        <h1 class="title">MY FRONT-END SKILLS</h1>
-        <section class="tarjetas">
+    <main>
+        <div class="main-section">
             
-            <div class="tarjeta">
-                <img src="./styles/img/html-5.png" class="tarjeta__img" alt="">
-                
-                <div class="tarjeta__info">
-                    <h3>HTML 5</h3>
-                    <p>I have enogh acknoledge about Html to create a WebSite, I have work with this language since 2021</p>
+            <section class="introduce container-odd" id="introduce">
+                <div class="avatar-dialoge">
+                    <img class="avatar" src="./assets/perfilImages/avatar2.svg" alt="">
+                    <p class="dialoge dialoge-format" id="introDialog">Welcome to my website</p>
                 </div>
-            </div>
-            
-            <div class="tarjeta">
-                <img src="./styles/img/css-3.png" class="tarjeta__img" alt="">
                 
-                <div class="tarjeta__info">
-                    <h3>CSS 3</h3>
-                    <p>With this language your pages will look better and more responsive.</p>
+                <div class="introduce-myself ">
+                    <h2>I am Sabimael Añaguaya</h2>
+                    <h1>a Front-End Developer</h1>
                 </div>
-            </div>
+            </section>
 
-            <div class="tarjeta">
-                <img src="./styles/img/js.png" class="tarjeta__img javaS" alt="">
-                
-                <div class="tarjeta__info">
-                    <h3>JAVASCRIPT</h3>
-                    <p>I can make more dynamic web pages with this programming language. </p>
+            <section class="about-section container-even" id="about">
+                <div class="avatar-dialoge about-section__image">
+                    <img class="avatar" src="./assets/perfilImages/avatar4.svg" alt="">
+                    <h2 class="dialoge dialoge-format" id="aboutDialog">Who am I?</h2>
+                    <div class="logo-tools">
+                        <img class="logo-tool" src="./styles/img/css-3.png" alt="">
+                        <img class="logo-tool" src="./styles/img/html-5.png" alt="">
+                        <img class="logo-tool" src="./styles/img/js.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="tarjeta">
-                <img src="./styles/img/bootstrap.png" class="tarjeta__img" alt="">
-                
-                <div class="tarjeta__info">
-                    <h3>BOOTSTRAP</h3>
-                    <p>I can implement and manage websites, with the this framework.  </p>
+                <div class="about-section__info">
+                    <p>I am Sabimael Añaguaya, so I enjoy making and designing websites. I am passionate about web development since 2019.</p>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+        
     </main>
-    <!-- 
-        ===============================================
-        FOOTER SECTION
-        ===============================================
-    -->
-    <footer class="footer">
-        <div class="footerWrap">
-            <a href="mailto:sabimael.anaguaya@gmail.com" target="_blank">
-                <img src="./styles/img/gmail.png" alt="" class="imgFooter">
-            </a>
-            <a href="https://www.linkedin.com/in/sabimael" target="_blank">
-                <img src="./styles/img/linkedin.png" alt="" class="imgFooter">
-            </a>
-        </div>
-        <a href="">
-            <img src="./styles/img/perfil-min.png" alt="" class="perfilFooter">
-        </a>
-        <div class="footerWrap">
-            <a href="https://github.com/SabimaelAnaguaya" target="_blank">
-                <img src="./styles/img/github.png" alt="" class="imgFooter">
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=59160636949&text=Hi, Sabimael I would like to have a Website" target="_blank">
-                <img src="./styles/img/whatsapp-2.png" alt="" class="imgFooter">
-            </a>
-            
-        </div>
-    </footer>
-
-    <script src="https://kit.fontawesome.com/3e68d728aa.js" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

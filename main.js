@@ -1,12 +1,5 @@
 document.querySelector('.menu-open-close').addEventListener("click", openMenuBar);
 
-let dialoge = document.querySelector('.dialoge');
-
-setTimeout(showDialog, 500)
-
-function showDialog(){
-    dialoge.classList.add("dialoge-apper")
-}
 
 function openMenuBar (){
     let menuBar = document.querySelector('.header-container');
@@ -20,3 +13,31 @@ function openMenuBar (){
     line3.classList.toggle("line3__activated");
 
 }
+
+/* ==================================== */
+
+let dialog1 = document.querySelector('#introDialog');
+let dialog2 = document.querySelector('#aboutDialog');
+
+
+const cargarDialogo = (entradas, obs) => {
+    entradas.forEach(entrada => {
+        if(entrada.isIntersecting){
+            entrada.target.classList.add('dialoge-apper');
+        }else{
+            entrada.target.classList.remove('dialoge-apper');
+        }
+    });
+};
+
+const obs = new IntersectionObserver(cargarDialogo, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5
+});
+
+
+obs.observe(dialog1)
+obs.observe(dialog2)
+
+
