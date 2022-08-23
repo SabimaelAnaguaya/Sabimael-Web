@@ -238,7 +238,7 @@ MAIN SECTION
     align-items: center;
     z-index: 0;
     transition: .75s all ease-in-out;
-    font-size: 3rem;
+    font-size: 1.6rem;
     font-weight: 500px;
     line-height: 30px;
     top: -70px;
@@ -269,7 +269,7 @@ MAIN SECTION
 }
 
 .dialoge{
-    width: 250px;
+    width: 200px;
     transform:scale(0);
 }
 
