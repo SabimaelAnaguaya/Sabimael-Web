@@ -256,12 +256,12 @@ MAIN SECTION
 }
 
 .introduce h2{
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 .introduce h1{
-    font-size: 3rem;
+    font-size: 1.6rem;
 }
 
 .avatar-dialoge{
@@ -281,7 +281,7 @@ MAIN SECTION
 
 
 .about-section__info{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 30px;
     text-align: center;
