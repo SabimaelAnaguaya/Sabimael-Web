@@ -1,8 +1,102 @@
 
-@media (max-width: 575.98px) {  }
+@media (min-width: 575.98px) { 
+    
+    .header-container{
+        position:fixed;
+        width: 70%;
+        height: 100vh;
+        padding: 0px 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        transition: .5s all ease-in-out;
+        box-shadow: none ;
+        z-index: 100;
+        border-top-right-radius: 0;
+        top: -0px;
+    }
+
+    .close{
+        transform: translateX(-100%);
+        box-shadow: none ;
+        transition: .5s all ease-in-out;
+    }
+
+    .header-logo{
+        width: 30%;
+    }
+    .header-nav{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+   
+    .header-social{
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-nav ul{
+        text-align: center;
+    }
+    
+    .header-nav ul  a{
+        text-align: center;
+        width: 50%;
+        transition: 0.5s all ease-in-out;
+    }
+
+    .header-nav ul a>li{
+        padding: 5px 8px;
+    }
+
+    
+
+    .main-section{
+        height: 100vh;
+    }
+
+    .introduce{
+        padding-bottom: 0 !important;
+    }
+
+    .avatar{
+        width: 150px;
+        margin: auto;
+    }
+
+    .introduce h2{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    
+    .introduce h1{
+        font-size: 2.5rem;
+    }
+
+    .dialoge-format{
+        font-size: 2rem;
+    }
+
+    .logo-tools{
+        width: 40px;
+        height: fit-content;
+    }
+    .about-section{
+        padding-top: 150px;
+    }
+    .about-section__info{
+        width: 300px;
+        font-size: 2rem;
+    }
+}
 
 
-@media (min-width: 767.98px) { 
+@media (min-width: 768.98px) { 
     .menu-open-close{
         display: none;
     }
@@ -32,6 +126,20 @@
     .header-logo{
         display: none;
     }
+
+    .header-nav{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    .header-social{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
 
     .header-nav{
         width: 70%;
