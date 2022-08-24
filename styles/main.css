@@ -228,14 +228,19 @@ MAIN SECTION
 
     color: var(--white);
     border-radius: 20px;
-    text-align: center;
+    
     align-items: center;
     z-index: 0;
     transition: .75s all ease-in-out;
-    font-size: 2.5rem;
-    
     
     transform:scale(0);
+}
+
+.dialog-wlcm{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
 }
 
 .avatar-dialoge{
@@ -255,25 +260,26 @@ MAIN SECTION
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     overflow: hidden;
-    width: 250px;
+    width: 300px;
 }
 
 .introduce-myself{
     width: 100%;
     text-align: center;
     line-height: 50px;
+    color: var(--white);
 }
 
 .introduce-myself h2{
-    margin-top: -30px;
-
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .introduce-myself h1{
-    margin-top: -20px;
-    font-size: 2rem;
+    margin-top: -10px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
 .introduce-myself p{
