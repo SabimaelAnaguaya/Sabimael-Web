@@ -92,6 +92,11 @@
         font-size: 3rem;
     }
 
+    /* ============================
+    ABOUT SECTION 
+    ===============================*/
+
+    
 }
 
 
@@ -175,7 +180,7 @@
         width: 400px;
     }
     .introduce-myself{
-        width: 300px;
+        width: 600px;
     }
     .avatar{
         width: 100%;
@@ -191,16 +196,38 @@
         font-size: 5rem;
     }
 
+
+    .skills{
+        width: 60px;
+        height: 300px;
+        
+    }
+
+    .skill-container{
+        flex-direction: column;
+    }
+     
+    @keyframes autoscroll{
+        from { transform: translateY(0); }
+        to { transform: translateY(-400px)}
+    }
 }
 
-@media  (min-width: 852px) and (orientation: landscape) { 
+@media  (min-width: 768.98px) and (orientation: landscape) { 
     .main-section{
         height: 100%;
+    }
+    .avatar-dialoge{
+        width: 250px;
     }
  }
 
 
-@media (max-width: 1199.98px) {  }
+@media (min-width: 1199.98px)  and (orientation: landscape){ 
+    .avatar-dialoge{
+        width: 450px;
+    }
+ }
 
 
 @media (max-width: 1399.98px) {  }

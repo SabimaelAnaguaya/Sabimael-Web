@@ -1,86 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/media.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/media.css">
+  <title>Document</title>
 </head>
 <body>
-    <div class="menu-open-close">
-        <div class="line line1"></div>
-        <div class="line line2"></div>
-        <div class="line line3"></div>
+  <div class="menu-open-close">
+    <div class="line line1"></div>
+    <div class="line line2"></div>
+    <div class="line line3"></div>
+  </div>
+  <header class="main-header">
+    <div class="header-container close">
+
+      <section  class="header-logo">
+        <picture>
+          <img src="./assets/perfilImages/avatar1.svg" alt="">
+        </picture>
+        <p>Sabimael</p>
+        <p>Front-End Developer</p>
+      </section>
+
+      <nav class="header-nav">
+        <ul>
+          <a href="#introduce">
+            <li>home</li>
+          </a>
+          
+          <a href="#about">
+            <li>about</li>
+          </a>
+          
+          <a href="#portafolio">
+            <li>portafolio</li>
+          </a>
+          
+        </ul>
+      </nav>
+      <section class="header-social">
+        <a href="" class="social-media"></a>
+        <a href="" class="social-media"></a>
+        <a href="" class="social-media"></a>
+        <a href="" class="social-media"></a>
+      </section>
     </div>
-    <header class="main-header">
-        <div class="header-container close">
-
-            <section  class="header-logo">
-                <picture>
-                    <img src="./assets/perfilImages/avatar1.svg" alt="">
-                </picture>
-                <p>Sabimael</p>
-                <p>Front-End Developer</p>
-            </section>
-
-            <nav class="header-nav">
-                <ul>
-                    <a href="#introduce">
-                        <li>home</li>
-                    </a>
-                    
-                    <a href="">
-                        <li>portafolio</li>
-                    </a>
-                    
-                    <a href="#about">
-                        <li>about</li>
-                    </a>
-                    
-                </ul>
-            </nav>
-            <section class="header-social">
-                <a href="" class="social-media"></a>
-                <a href="" class="social-media"></a>
-                <a href="" class="social-media"></a>
-                <a href="" class="social-media"></a>
-            </section>
-        </div>
-    </header>
-    <main>
-        <div class="main-section">
-            
-            <section class="container-odd" id="introduce">
-
-                <div class="avatar-dialoge" >
-                    <img class="avatar" src="./assets/perfilImages/avatar2.svg" alt="">
-                    <div class="bg-dialog dialoge"  id="introDialog">
-                        <div>
-                            <p class="dialog-wlcm" >Welcome to my website</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="introduce-myself ">
-                    <h2>Sabimael Añaguaya</h2>
-                    <h1>Front-End Developer</h1>
-
-                    
-                    <a href="./assets/doc/CV Sabimael _ Front-end Developer.pdf" download="SabimaelCV.pdf" class="btn-cv">Download CV</a>
-                    
-
-                </div>
-
-                
-            </section>
+  </header>
+  <main>
+    <div class="main-section">
+      
+      <section class="container-odd" id="introduce">
+        <div class="avatar-dialoge" >
+          <img class="avatar" src="./assets/perfilImages/avatar2.svg" alt="">
+          <div class="bg-dialog dialoge"  id="introDialog">
+            <div>
+              <p class="dialog-wlcm" >Welcome to my website</p>
+            </div>
+          </div>
         </div>
         
-    </main>
-    <script src="./main.js"></script>
+        <div class="introduce-myself ">
+          <h2>Sabimael Añaguaya</h2>
+          <h1>Front-End Developer</h1>
+
+          
+          <a href="./assets/doc/CV Sabimael _ Front-end Developer.pdf" download="SabimaelCV.pdf" class="btn-cv">Download CV</a>
+        </div>
+
+      </section>
+      <section class="container-odd about-section" id="about">
+        
+        <div class="container-blur">
+            <div class="perfil-photo">
+                <img src="./assets/perfilImages/photo-perfil.png" alt="">
+            </div>
+            <div class="perfil-info">
+                <h2>ABOUT ME</h2>
+                <p>Hello, I am Sabimael Añaguaya, a <span class="perfil-info--bold">self-taught front-end developer</span> highly resourceful and hard-working professional, </p>
+                <p>
+                    I have been fascinated with <span class="perfil-info--bold">information technology</span> since my childhood. Now, I enjoy making beautiful and functional Web sites.
+                </p>
+            </div>
+        </div>
+
+        <div class="skills">
+            <ul class="skill-container">
+              <li><img src="./assets/icons/html5-brands.svg" class="ico-skill" alt=""></li>
+              <li><img src="./assets/icons/css3-alt-brands.svg" class="ico-skill" alt=""></li>
+              <li><img src="./assets/icons/square-js-brands.svg" class="ico-skill" alt=""></li>
+              <li><img src="./assets/icons/github.svg"  class="ico-skill"alt=""></li>
+              <li><img src="./assets/icons/bootstrap-brands.svg" class="ico-skill" alt=""></li>
+              <li><img src="./assets/icons/npm-brands.svg"  class="ico-skill" alt=""></li>
+              <li><img src="./assets/icons/react-brands.svg" class="ico-skill" alt=""></li>            
+            </ul>
+        </div>
+      </section>
+
+      <section class="container-odd portafolio-section" id="portafolio">
+        <div class="card-potafolio">
+            
+        </div>
+      </section>
+    </div>
+    
+  </main>
+
+  <script src="./main.js"></script>
 </body>
 </html>
