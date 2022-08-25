@@ -16,6 +16,9 @@
         z-index: 100;
         border-top-right-radius: 0;
         top: -0px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius:20px;
+        
     }
 
     .close{
@@ -55,29 +58,19 @@
         padding: 5px 8px;
     }
 
+    /* ============= MAIN SECTION ============ */
     
-
-    .main-section{
-        height: 100vh;
-    }
-
-    .introduce{
-        width: 100%;
-        padding-bottom: 0 !important;
-    }
-
-    .avatar{
-        width: 150px;
-        margin: auto;
-    }
-
     .dialoge-format{
         width: fit-content;
         line-height: 40px;
         font-size: 4rem !important;
     }
     .avatar-dialoge{
-        width: 25%;
+        width: 200px;
+    }
+
+    .avatar{
+        width: 100%;
     }
 
     .introduce-myself{
@@ -85,24 +78,18 @@
     }
 
     .introduce-myself h2{
-        font-size: 6rem;
+        font-size: 3.2rem;
         font-weight: 700;
     }
     
     .introduce-myself h1{
-        font-size: 5rem;
+        font-size: 3rem;
         margin-top: 20px;
-    }
-
-    .introduce-myself p{
-        margin-top: 80px;
-        font-size: 4rem;
-        line-height: 40px;
     }
 
     .dialoge-format{
         top: -100px;
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
 }
@@ -127,6 +114,7 @@
         z-index: 100;
         border-top-right-radius: 0;
         top: -0px;
+        
     }
 
     .close{
@@ -187,25 +175,29 @@
         width: 400px;
     }
     .introduce-myself{
-        width: 600px;
+        width: 300px;
     }
     .avatar{
         width: 100%;
         margin: auto;
     }
 
-    .introduce h2{
-        font-size: 5rem;
+    .introduce-myself h2{
+        font-size: 6rem;
         font-weight: 700;
     }
     
-    .introduce h1{
-        font-size: 4rem;
+    .introduce-myself h1{
+        font-size: 5rem;
     }
 
 }
 
-@media (max-width: 991.98px) {  }
+@media  (min-width: 852px) and (orientation: landscape) { 
+    .main-section{
+        height: 100%;
+    }
+ }
 
 
 @media (max-width: 1199.98px) {  }
