@@ -32,7 +32,7 @@ const cargarDialogo = (entradas, obs) => {
 const obs = new IntersectionObserver(cargarDialogo, {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5
+    threshold: 0
 });
 
 
