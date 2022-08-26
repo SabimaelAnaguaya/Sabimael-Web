@@ -17,7 +17,8 @@ function openMenuBar (){
 /* ==================================== */
 
 let dialog1 = document.querySelector('#introDialog');
-let screenPortafolio = document.querySelector('#portafolio-container')
+let burgos = document.querySelector('#burgosMarka')
+let prueba = document.querySelector('#prueba')
 
 const cargarDialogo = (entradas, obs) => {
     entradas.forEach(entrada => {
@@ -37,7 +38,8 @@ const obs = new IntersectionObserver(cargarDialogo, {
 
 
 obs.observe(dialog1);
-obs.observe(screenPortafolio);
+obs.observe(burgos);
+obs.observe(prueba);
 
 
 

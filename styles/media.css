@@ -211,6 +211,21 @@
         from { transform: translateY(0); }
         to { transform: translateY(-400px)}
     }
+
+    .container-blur{
+        max-width: 700px;
+    }
+
+    .perfil-info{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .perfil-info--bold{
+        font-weight: 700;
+    }
+
+  
 }
 
 @media  (min-width: 768.98px) and (orientation: landscape) { 
