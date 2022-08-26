@@ -225,22 +225,60 @@
         font-weight: 700;
     }
 
-  
+
+    /* PORTAFOLIO SECTION */
+
+   
 }
 
 @media  (min-width: 768.98px) and (orientation: landscape) { 
     .main-section{
+        padding-top: 50px;
         height: 100%;
     }
     .avatar-dialoge{
         width: 250px;
+        align-self: center;
     }
+    .introduce-myself{
+        width: 400px;
+        align-self: center;
+    }
+
+    .introduce-myself h2{
+        font-size: 4rem;
+    }
+
+    .introduce-myself h1{
+        font-size: 3rem;
+    }
+
+    .about-section{
+        height: fit-content;
+    }
+
+    .portafolio-section{
+        height: fit-content;
+    }
+    
  }
 
 
-@media (min-width: 1199.98px)  and (orientation: landscape){ 
+@media (min-width: 1100px)  and (orientation: landscape){ 
     .avatar-dialoge{
         width: 450px;
+    }
+    .introduce-myself{
+        width: 600px;
+        align-self: center;
+    }
+
+    .introduce-myself h2{
+        font-size: 5rem;
+    }
+
+    .introduce-myself h1{
+        font-size: 4rem;
     }
  }
 
