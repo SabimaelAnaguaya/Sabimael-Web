@@ -231,13 +231,12 @@
    
 }
 
-@media  (min-width: 768.98px) and (orientation: landscape) { 
+@media  (min-width: 666.98px) and (orientation: landscape) { 
     .main-section{
-        padding-top: 50px;
         height: 100%;
     }
     .avatar-dialoge{
-        width: 250px;
+        max-width: 250px;
         align-self: center;
     }
     .introduce-myself{
@@ -258,7 +257,7 @@
     }
 
     .portafolio-section{
-        height: fit-content;
+        height: fit-content !important;
     }
     
  }
@@ -279,6 +278,10 @@
 
     .introduce-myself h1{
         font-size: 4rem;
+    }
+
+    .portafolio-section{
+        height: fit-content !important;
     }
  }
 

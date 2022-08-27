@@ -164,6 +164,7 @@ ESTILOS HEADER
 }
 
 .header-social :nth-child(1){
+    mask: url(../assets/icons/linkedin1.svg);
     -webkit-mask: url(../assets/icons/linkedin1.svg);
 }
 
@@ -172,6 +173,7 @@ ESTILOS HEADER
 }
 
 .header-social :nth-child(2){
+    mask: url(../assets/icons/github1.svg);
     -webkit-mask: url(../assets/icons/github1.svg);
 }
 
@@ -179,12 +181,14 @@ ESTILOS HEADER
     background:  #171515;
 }
 .header-social :nth-child(3){
+    mask: url(../assets/icons/mail1.svg);
     -webkit-mask: url(../assets/icons/mail1.svg);
 }
 .header-social :nth-child(3):hover{
     background:  #EA4335;
 }
 .header-social :nth-child(4){
+    mask: url(../assets/icons/whatsapp1.svg);
     -webkit-mask: url(../assets/icons/whatsapp1.svg);
 
 }
