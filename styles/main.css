@@ -426,10 +426,18 @@ PORTAFOLIO SECTION
     width: fit-content;
     display: flex;
     justify-content: start;
-    padding: 0 50px;
+    padding:20px;
     gap: 50px;
     overflow: hidden;
     overflow-x: scroll;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(205, 205, 205, 0.8) 0%, transparent 100%);
+    
+}
+
+.container-portafolio__projects:after{
+    background: linear-gradient(to left, rgba(205, 205, 205, 0.471) 0%, transparent 100%);
+
 }
 
 .card-portafolio{
@@ -528,6 +536,7 @@ PORTAFOLIO SECTION
     top: -15px;
     left: calc(50% - 62px);
     position: absolute;
+    color: var(--white);
 }
 
 .social-footer{

@@ -20,6 +20,7 @@ let dialog1 = document.querySelector('#introDialog');
 let burgos = document.querySelector('#burgosMarka')
 let portfolio = document.querySelector('#template-portfolio')
 let mobile = document.querySelector('#mobile-first')
+let clon = document.querySelector('#clonNintendo')
 
 const cargarDialogo = (entradas, obs) => {
     entradas.forEach(entrada => {
@@ -42,6 +43,7 @@ obs.observe(dialog1);
 obs.observe(burgos);
 obs.observe(portfolio);
 obs.observe(mobile);
+obs.observe(clon);
 
 
 
