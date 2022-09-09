@@ -219,13 +219,13 @@ MAIN SECTION
     padding: 0 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .home-section{
     padding-top: 70px;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .bg-dialog{
@@ -322,10 +322,9 @@ ABOUT SECTION
 */
 
 .about-section{
+    justify-content: center;
+    gap: 20px;
     height: 100vh;
-    margin-top: 70px;
-    gap: 50px;
-  
 }
 
 .skills{
@@ -395,9 +394,9 @@ ABOUT SECTION
 }
 
 .perfil-info{
-    
     font-size: 1.8rem;
     text-align: center;
+    line-height: 25px;
 }
 
 .perfil-info--bold{
