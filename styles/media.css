@@ -177,7 +177,7 @@
     }
     
     .avatar-dialoge{
-        width: 400px;
+        width: 600px;
     }
     .introduce-myself{
         width: 600px;
@@ -206,7 +206,11 @@
     .skill-container{
         flex-direction: column;
     }
-     
+    .container-portafolio__projects{
+        flex-wrap: wrap;
+        overflow-x: unset;
+        justify-content: center;
+    }
     @keyframes autoscroll{
         from { transform: translateY(0); }
         to { transform: translateY(-400px)}
@@ -236,7 +240,7 @@
         height: 100%;
     }
     .avatar-dialoge{
-        max-width: 250px;
+        max-width: 300px;
         align-self: center;
     }
     .introduce-myself{
@@ -253,7 +257,7 @@
     }
 
     .about-section{
-        height: fit-content;
+        height: 100vh;
     }
 
     .portafolio-section{

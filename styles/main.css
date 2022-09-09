@@ -411,9 +411,7 @@ PORTAFOLIO SECTION
 */
 
 .portafolio-section{
-    padding-top: 100px;
-    
-    height: 100vh;
+  
 }
 .portafolio-section h2{
     width: 100%;
@@ -422,7 +420,7 @@ PORTAFOLIO SECTION
     font-size: 3rem;
 }
 .container-portafolio__projects{
-    height: 100%;
+    height: fit-content;
     width: fit-content;
     display: flex;
     justify-content: start;
