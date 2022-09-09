@@ -225,7 +225,7 @@ MAIN SECTION
     padding-top: 70px;
     height: 100vh;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 
 .bg-dialog{
@@ -323,7 +323,8 @@ ABOUT SECTION
 
 .about-section{
     justify-content: center;
-    gap: 20px;
+    align-content: center;
+    gap: 50px;
     height: 100vh;
 }
 
@@ -375,7 +376,7 @@ ABOUT SECTION
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
+    align-self: flex-start;
 }
 .perfil-photo{
     width: 150px;
@@ -410,7 +411,7 @@ PORTAFOLIO SECTION
 */
 
 .portafolio-section{
-  
+  align-content: center;
 }
 .portafolio-section h2{
     width: 100%;

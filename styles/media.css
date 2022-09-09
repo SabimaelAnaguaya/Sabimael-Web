@@ -65,8 +65,11 @@
         line-height: 40px;
         font-size: 4rem !important;
     }
+    .introduce{
+        flex-wrap: wrap;
+    }
     .avatar-dialoge{
-        width: 200px;
+        width: 350px;
     }
 
     .avatar{
@@ -100,7 +103,7 @@
 }
 
 
-@media (min-width: 768.98px) { 
+@media (min-width: 768.9px) { 
     .menu-open-close{
         display: none;
     }
