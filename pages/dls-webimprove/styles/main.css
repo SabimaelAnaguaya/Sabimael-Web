@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+
+
+:root{
+    --dark-violet: #512676;
+    --violet: #a467db;
+
+    --roboto: 'Roboto Condensed', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: var(--roboto);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ================================
+    HEADER SECTION
+==================================*/
+
+.main-header{
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    position: fixed;
+    background: rgb(81, 38, 118, .9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+.menubar{
+    width: 100%;
+    height: calc(100vh - 60px);
+    position: fixed;
+    background: rgb(81, 38, 118, 0.7);
+    backdrop-filter: blur(5px);
+    top: 60px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: azure;
+    list-style: none;
+    border-bottom-left-radius: 100%;
+    transform: translateX(100%);
+    transition: all 0.75s ease-in-out;
+    z-index: 1000;
+
+}
+
+.menubar a{
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: azure;
+    font-size: 3rem;
+    transition: .5s all ease-out;
+}
+
+.menubar a:hover{
+    background-color: var(--dark-violet);
+    transition: .5s all ease-in-out;
+}
+
+.show{
+    transform: translateX(0);
+    border-bottom-left-radius:0 ;
+    transition: all .75s ease-in;
+}
+
+.info-header{
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/img-header-min.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.info-header img{
+    width: 300px;
+    height: 310px;
+}
+
+.logo-test{
+    width: 150px;
+   
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    transform: rotate(30deg);
+    animation-delay: 1s;
+    transition: all .5s ease-in-out;
+}
+
+.logo-test:hover{
+    transform: scale(1.5);
+}
+
+.logo-test .img-logo-test{
+    width: 100%;
+    height: 100%;
+}
+
+.info-header__text{
+    max-width: 500px;
+    padding: 20px 0;
+    background-color: rgb(81, 38, 118, .75);
+    text-align: center;
+    font-size: 3rem;
+    color: azure;
+}
+
+
+
+/* ================================
+    MAIN SECTION
+==================================*/
+
+.info-main{
+    width: ;
+    padding: 60px 0;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.info-main__link{
+    width: 170px;
+    height: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 10px -5px gray;
+}
+
+.info-main__link img{
+    width: 80%;
+}
+.info-main__link h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.info-main__link a{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 8px;
+    font-size: 2rem;
+    color: white;
+    border-radius: 10px;
+    font-weight: 400;
+    background: var(--violet);
+    cursor: pointer;
+}
+
+
+
+
+
+/* About section */
+
+.about-main{
+    padding: 60px 30px;
+    background: var(--violet);
+    overflow-x: scroll;
+    position: relative;
+}
+
+.about-scroll{
+    width:1350px;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    gap: 70px;   
+}
+
+.about-main__card{
+    width: 380px;
+    height: fit-content;
+    background: azure;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 1px azure ;
+    position: relative;
+    font-size: 2rem;
+}
+
+.pet-logo{
+    position: absolute;
+    width: 100px;
+    right: 0;
+    top: -60px;
+    z-index: 1;
+}
+
+.about-main__text{
+    width: 100%;
+}
+
+.about-main__text h3{
+    margin-bottom: 20px;
+}
+
+.about-main__text p{
+    margin: 0 20px;
+    text-align: justify;
+}
+
+/* FOOTER */
+
+.main-footer{
+    width: 100%;
+    height: 310px;
+    background: var(--dark-violet);
+    position: relative;
+}
+
+.footer{
+    display: flex;
+    color: azure;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-services__card{
+}
+
+.footer-services__card h4{
+    width: fit-content;
+    color: azure;
+    font-weight: 700;
+    border-bottom: 4px solid azure;
+    margin-bottom: 10px;
+}
+
+.footer-services__card a{
+    list-style: none;
+    color: azure;
+    line-height: 30px;
+}
+
+.personal-contact{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    background: var(--violet);
+    font-weight: 700;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.social-media{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+/* media query */
+
+@media (min-width: 992px){
+
+    .main-header{
+        height: 80px;
+    }
+    .menubar{
+        height: fit-content;
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 15px;
+        position: static;
+        backdrop-filter: blur(0);
+        transform: translate(0);
+        background: unset;
+        border-radius: 0;
+    }
+    .menubar a{
+        font-size: 2rem;
+        width: fit-content;
+    }
+
+    .info-header{
+        flex-direction: row-reverse;
+    }
+
+    .info-header img{
+        width: 350px;
+        height: 360px;
+    }
+
+    .info-header__text{
+        max-width: 650px;
+        border-radius: 30px;
+        font-size: 3.5rem;
+    }
+    .info-main{
+        padding: 60px 100px;
+    }
+
+    .info-main__link{
+        width: 230px;
+        height: 330px;
+    }
+
+    .about-main{       
+        gap:70px;
+        align-items:flex-start;
+        justify-content: center;
+    }
+    .about-scroll{
+        width: 1500px;
+    }
+
+    .about-main__card{
+        width: 700px;
+    }
+    .social-media{
+        flex-direction: row;
+    }
+
+    .logo-test{
+        top: 150px;
+        width: 200px;
+    }
+    
+    .logo-test:hover{
+        transform: scale(1.5);
+    }
+}

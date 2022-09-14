@@ -1,0 +1,31 @@
+.logo-container{
+    width: 155px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+}
+
+.logo-container img{
+    height: 100%;
+}
+
+.logo-word{
+    color: #2b499b;
+    color: azure;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.logo-word h2{
+    font-size: 4rem;
+    letter-spacing: 5px;
+    line-height: 3.5rem;
+    
+}
+
+.logo-word p{
+    font-size: 0.8rem;
+}
+
