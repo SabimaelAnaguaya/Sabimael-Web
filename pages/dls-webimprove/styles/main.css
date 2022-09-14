@@ -247,6 +247,7 @@ a{
     font-size: 2rem;
     align-items: center;
     justify-content: space-around;
+    padding-right: 20px;
 }
 
 .footer-services__card{
