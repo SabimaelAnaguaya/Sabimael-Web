@@ -219,13 +219,13 @@ MAIN SECTION
     padding: 0 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .home-section{
     padding-top: 70px;
     height: 100vh;
+    justify-content: center;
+    align-content: center;
 }
 
 .bg-dialog{
@@ -322,10 +322,10 @@ ABOUT SECTION
 */
 
 .about-section{
-    height: 100vh;
-    margin-top: 70px;
+    justify-content: center;
+    align-content: center;
     gap: 50px;
-  
+    height: 100vh;
 }
 
 .skills{
@@ -376,7 +376,7 @@ ABOUT SECTION
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
+    align-self: flex-start;
 }
 .perfil-photo{
     width: 150px;
@@ -395,9 +395,9 @@ ABOUT SECTION
 }
 
 .perfil-info{
-    
     font-size: 1.8rem;
     text-align: center;
+    line-height: 25px;
 }
 
 .perfil-info--bold{
@@ -411,9 +411,7 @@ PORTAFOLIO SECTION
 */
 
 .portafolio-section{
-    padding-top: 100px;
-    
-    height: 100vh;
+  align-content: center;
 }
 .portafolio-section h2{
     width: 100%;
@@ -422,7 +420,7 @@ PORTAFOLIO SECTION
     font-size: 3rem;
 }
 .container-portafolio__projects{
-    height: 100%;
+    height: fit-content;
     width: fit-content;
     display: flex;
     justify-content: start;
