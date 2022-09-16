@@ -460,7 +460,7 @@ PORTAFOLIO SECTION
 .card-portafolio__info{
     position: absolute;
     width: 100%;
-    height: 400px;
+    height: 100%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -471,11 +471,9 @@ PORTAFOLIO SECTION
     transition: .5s all ease-in-out;
     transform: translateY(0);
     
-
-    background: rgba(255, 255, 255, 0.2);
-    border: 0.5px solid rgba(16, 28, 32, .8, 0.3);
-    box-shadow: rgba(16, 28, 32, .8, 0.25) 0px 50px 100px;
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 
     font-size: 2rem;
     text-align: center;
@@ -484,7 +482,7 @@ PORTAFOLIO SECTION
 
 .portafolio:hover > .card-portafolio__info{
 
-    transform: translateY(-350px);
+    transform: translateY(-90%);
     transition: .5s all ease-in-out;
 
 }
