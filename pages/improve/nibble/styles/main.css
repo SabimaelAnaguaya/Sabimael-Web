@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root{
+    /* Colors */
+    --dark-blue: rgb(32, 64, 81);
+    --dark-blue-blur:rgb(32, 64, 81, .8);
+    --blue:#3b6978;
+    --light-blue: #84a9ac;
+    --light-yellow:#e7dfd5;
+    /*  */
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+/* ============================
+    HEADER SECTION
+   ============================ */
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    transition: all .5s ease-out;
+    z-index: 99;
+    background-color: rgba(240, 255, 255, 0.26);
+    box-shadow: 0px 10px 20px 1px rgba(166, 167, 167, 0.26);
+}
+
+.logo{
+    position: relative;
+    transform: translateY();
+    height: 100%;
+}
+
+.logo img{
+    height: 100%;
+    transition: all .5s ease-out;
+}
+
+.hide-navbar{
+    transform: translateY(-80px);
+    transition: all .5s ease-in;
+}
+
+/* MENU HAMBURGUESA */
+
+.menu-hamburger{
+    width: 35px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.line{
+    width: 35px;
+    height: 6px;
+    background: azure;
+    border-radius: 5px;
+    position: relative;
+    transition: .5s all ease-in-out;
+}
+
+.line_1{
+    position: absolute;
+    transform: rotate(-315deg);
+    transition: .5s all ease-in-out;
+}
+
+.line_2{
+    position: absolute;
+    transform: scale(0);
+    transition: .5s all ease-in-out;
+}
+
+.line_3{
+    position: absolute;
+    transform: rotate(315deg);
+    transition: .5s all ease-in-out;
+}
+
+/* NAV LIST */
+.navlist{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc( 100vh + 80px);
+    background: var(--dark-blue-blur);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: azure;
+    border-radius: 50%;
+    gap: 20px;
+    opacity: 0;
+    transform: translate(100%);
+    transition: all .5s ease-out;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 99;
+}
+
+
+.show{
+    opacity: 1;
+    border-radius: 0;
+    transform: translate(0);
+    transition: all .5s ease-in;
+    z-index: 99;
+}
+
+.navlist-link{
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 0;  
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease-out;
+}
+
+.fondo{
+    width: 100%;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(231, 231, 231, 0.2);
+    position: absolute;
+    top: -100px;
+    left: -10%;
+    transform: translateX(-100%);
+    transition: .5s all ease-out;
+}
+
+.navlist-link:hover{
+    color: black;
+    background: rgb(255, 210, 49, .8);
+    transition: all .5s ease-in;
+}
+.navlist-link:hover  .fondo{
+   transform: translateX(0);
+   transition: .5s all ease-in;
+}
+
+/* ============================
+    MAIN SECTION
+   ============================ */
+main{
+    position: relative;
+
+}
+.introduce{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/fondo.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-introduce{
+    width: 100%;
+    max-width: 750px;
+    min-width: 350px;
+    height: 200px;
+    padding: 20px;
+    background: rgba(247, 247, 247, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.text-introduce h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.text-introduce h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.materias{
+    width: 200px;
+    height: 30px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    overflow: hidden;
+    margin: auto;
+
+}
+
+.materias p{
+    border-radius: 10px;
+    padding: 4px 10px;
+    height: 100%;
+}
+
+#militar{
+    width: 200px;
+    background: #e22121;
+    color: white;
+}
+
+#policial{
+
+    background: #007e1b;
+    color: azure;
+}
+
+#universidad{
+  
+    background: rgb(94, 94, 255);
+    color: azure;
+}
+
+#esfm{
+
+    background: tomato;
+    color: azure;
+}
+
+.about-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
