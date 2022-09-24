@@ -25,3 +25,6 @@ window.onscroll = function(){
 
     mainUbication = actualScroll;
 }
+
+/* carousel */
+
