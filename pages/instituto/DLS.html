@@ -13,44 +13,22 @@
 </head>
 <body>
     <header class="header">
-        <nav class="main-header">
-        <a  href="./DLS.html" class="logo-container">
-            <img src="./assets/logo.svg" alt="">
-            <div class="logo-word">
-                <h2>DLS</h2>
-                <p>Digital Languaje Service</p>
-            </div>
-        </a>
-        
-        <div class="menu-hamburger" id="btn-menubar">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <ul class="menubar">
-            <a href=""><li>Inicio</li></a>
-            <a href=""><li>Cursos</li></a>
-            <a href=""><li>toefl</li></a>
-            <a href=""><li>traducciones</li></a>
-            <a href=""><li>contactos</li></a>
-
-        </ul>
-        </nav>
+        <nav-bar></nav-bar>
+    </header>
+    
+    <main class="main">
         <section class="info-header">
             <img src="./assets/petDLS.png" alt="">
-
+    
             <div  class="logo-test">
                 <img class="img-logo-test" src="./assets/test-authorized.png" alt="">
             </div>
-
+    
             <div class="info-header__text">
                 <h1>DLS - Centro de Traducciones e Idiomas</h1>
                 <p>Cursos de inglés</p>
             </div>
         </section>
-    </header>
-
-    <main class="main">
         <section class="info-main">
             <div class="info-main__link">
                 <img src="./assets/cursos.svg" alt="">
@@ -175,6 +153,7 @@
           </div>
     </footer>
 
+    <script type="module" src="./components/headerNavbar.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>
