@@ -3,9 +3,12 @@
 
 
 :root{
+    --black:#303841;
+    --gray:#3a4750;
     --dark-violet: #512676;
     --violet: #a467db;
-
+    --orange: #ea9215;
+    --white: #eeeeee;
     --roboto: 'Roboto Condensed', sans-serif;
 }
 *{
@@ -72,7 +75,8 @@ a{
 }
 
 .menubar a:hover{
-    background-color: var(--dark-violet);
+    color: var(--black);
+    background-color: var(--orange);
     transition: .5s all ease-in-out;
 }
 
@@ -99,17 +103,18 @@ a{
 .info-header img{
     width: 300px;
     height: 310px;
+    animation: show-left 3s ease;
 }
 
 .logo-test{
     width: 150px;
-   
     position: absolute;
     top: 100px;
     right: 70px;
     transform: rotate(30deg);
     animation-delay: 1s;
     transition: all .5s ease-in-out;
+    
 }
 
 .logo-test:hover{
@@ -284,74 +289,14 @@ a{
     gap: 20px;
     flex-direction: column;
 }
-/* media query */
 
-@media (min-width: 992px){
 
-    .main-header{
-        height: 80px;
-    }
-    .menubar{
-        height: fit-content;
-        justify-content: flex-end;
-        flex-direction: row;
-        gap: 15px;
-        position: static;
-        backdrop-filter: blur(0);
-        transform: translate(0);
-        background: unset;
-        border-radius: 0;
-    }
-    .menubar a{
-        font-size: 2rem;
-        width: fit-content;
-    }
+/* ANIMATIONS */
 
-    .info-header{
-        flex-direction: row-reverse;
-    }
 
-    .info-header img{
-        width: 350px;
-        height: 360px;
-    }
-
-    .info-header__text{
-        max-width: 650px;
-        border-radius: 30px;
-        font-size: 3.5rem;
-    }
-    .info-main{
-        padding: 60px 100px;
-    }
-
-    .info-main__link{
-        width: 230px;
-        height: 330px;
-    }
-
-    .about-main{       
-        gap:70px;
-        align-items:flex-start;
-        justify-content: center;
-    }
-    .about-scroll{
-        width: 1500px;
-    }
-
-    .about-main__card{
-        width: 700px;
-    }
-    .social-media{
-        flex-direction: row;
-    }
-
-    .logo-test{
-        top: 150px;
-        width: 200px;
-    }
-    
-    .logo-test:hover{
-        transform: scale(1.5);
+@keyframes show-left {
+    from{
+        transform: translateX(200px);
+        opacity: 0;
     }
 }
