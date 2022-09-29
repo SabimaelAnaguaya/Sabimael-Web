@@ -13,24 +13,7 @@ class Navbar extends HTMLElement {
         if (event.type === "click")
           this.showMenu();
     }
-    showMenubar(){
-
-        this.mainUbication = window.pageXOffset;
-        this.navbar = document.querySelector('nav-bar').shadowRoot.querySelector('.main-header');
-        
-        console.log(this.navbar);
-        
-        window.onscroll = function(){
-            this.actualScroll = window.pageYOffset;
-            if(mainUbication >= actualScroll){
-                this.navbar.shadowRoot.classList.remove('hide-navbar')
-            }else{
-                this.navbar.shadowRoot.classList.add('hide-navbar');
-            }
-            this.mainUbication = this.actualScroll;
-        }
-        
-    }
+    
 
     showMenu(){
         this.menu = this.shadowRoot.querySelector('.menubar')
@@ -110,10 +93,6 @@ class Navbar extends HTMLElement {
             transition: .5s all ease;
         }
         
-        .hide-navbar{
-            transform: translateY(-60px);
-            transition: .5s all ease;
-        }
         .menubar{
             width: 100%;
             height: calc(100vh);
@@ -229,15 +208,87 @@ class Navbar extends HTMLElement {
             transition: all .75s ease-in;
         }
         
+        @keyframes show-left {
+            from{
+                transform: translateX(-200px);
+                opacity: 0;
+            }
+        }
+
         @media (min-width: 992px){
-            .menu-hamburger{
-                display: none;
+
+            .main-header{
+                height: 80px;
+            }
+            .menubar{
+                height: fit-content;
+                justify-content: flex-end;
+                flex-direction: row;
+                gap: 15px;
+                position: static;
+                backdrop-filter: blur(0);
+                transform: translate(0);
+                background: unset;
+                border-radius: 0;
+            }
+            .menubar a{
+                font-size: 2rem;
+                width: fit-content;
+            }
+        
+            .info-header{
+                flex-direction: row-reverse;
+            }
+        
+            .info-header img{
+                width: 350px;
+                height: 360px;
+            }
+        
+            .info-header__text{
+                max-width: 650px;
+                border-radius: 30px;
+                font-size: 3.5rem;
+            }
+            .info-main{
+                padding: 60px 100px;
+            }
+        
+            .info-main__link{
+                width: 230px;
+                height: 330px;
+            }
+        
+            .about-main{       
+                gap:70px;
+                align-items:flex-start;
+                justify-content: center;
+            }
+            .about-scroll{
+                width: 1500px;
+            }
+        
+            .about-main__card{
+                width: 700px;
+            }
+            .social-media{
+                flex-direction: row;
+            }
+        
+            .logo-test{
+                top: 150px;
+                width: 200px;
+            }
+            
+            .logo-test:hover{
+                transform: scale(1.5);
             }
         }
         
         </style>
         `
     }
+
     render(){
         this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true))
     }
@@ -248,7 +299,6 @@ class Navbar extends HTMLElement {
         this.btnMenu = this.shadowRoot.querySelector('#btn-menu');
         this.btnMenu.addEventListener("click", this);
         
-        window.onscroll = this.showMenubar();
     }
 
     disconnectedCallback(){
