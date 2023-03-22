@@ -1,0 +1,21 @@
+.st0{fill:none;}
+	.st1{
+    
+		fill:none;
+		stroke:#6596D0;
+		stroke-width:48.154;
+		stroke-miterlimit:10;
+		stroke-dasharray: 1580;
+    stroke-dashoffset: 0;
+    animation: dash 5s linear;	
+		
+  }
+
+	@keyframes dash {
+    from {
+      stroke-dashoffset: 1580;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+	}

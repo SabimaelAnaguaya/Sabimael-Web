@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Sabimael, desarrollador web, frontend developer,diseño web, web design, desarrollo web, Maguaya, creación páginas web, página web"/>
+    <meta name="author" content="Sabimael">
+    <meta name="description" content="Hola, mi nombre es Sabimael Añaguaya y soy desarrollador front end auto-didacta, disfruto realizandopaginas web funcionales y agradables">
+    <meta name="copyright" content="Sabimael Añaguaya" />
+    <link rel="canonical" href="https://sabimael.com"/>
+    <meta name="robots" content="follow"/>
+    <meta name="robots" content="index"/>
+
+    <link rel="icon" type="image/svg" href="../assets/icons/logo.svg"/>
+    <link rel="stylesheet" href="../main.css">
+    <title>Sabimael | Proyectos</title>
+</head>
+
+<body>
+    <div class="content_loader">
+        <img src="../assets/icons/logo.svg" alt="">
+    </div>
+    <header class="container">
+        <nav class="navbar">
+            <my-logo 
+                img="../assets/icons/logo.svg"
+                title="Sabimael"
+                subtitle="Web Developer">
+            </my-logo>
+            <sa-navlist>
+                    <li slot="list">
+                        <a class="list-link" href="../index.html">INICIO</a>
+                    </li>
+                    <li slot="list">
+                        <a class="list-link" href="./proyectos.html">PROYECTOS</a>
+                    </li>
+                    <li slot="list">
+                        <a class="list-link" href="./MAGUAYA/maguaya.html">SERVICIO</a>
+                    </li>
+                    <li slot="list">
+                        <a class="list-link contactame" href="https://api.whatsapp.com/send?phone=59160636949&text=Hola!,Sabimael me gustaria saber mas sobre tu trabajo">CONTACTAME</a>
+                    </li>
+                
+            </sa-navlist>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section class="hero-projects">
+            <picture>
+                <img src="../assets/avatar3.svg" alt="">
+            </picture>
+
+            <div class="project-welcome">
+                <h1>Mis <span class="color-font">Trabajos</span>, retos y <span>más...</span></h1>
+
+                <p>En esta página podras encontrar los diferentes trabajos, proyectos, retos que he realizado hasta al día de hoy</p>
+            </div>
+        </section>
+        
+        <section class="my-project">
+            <h2><span class="color-font">Proyectos</span> realizados por mi</h2>
+            <p>En esta primera seccion estan mis proyectos realizados a lo largo de mi aprendizaje como desarrollador frontend, desde lo básico en HTML, CSS, JS, Bootstrap, WebComponents y todas las tecnologías que iré aprendiendo</p>
+            
+            <div class="container-portafolio__projects">
+                <card-pj
+                    img="../assets/images/tictactoe.png"
+                    title="Tic Tac Toe"
+                    url="./projects/Tic Tac Toe/tic-tac-toe.html"
+                >Juego Tic Tac Toe o Tres en raya
+                    
+                </card-pj>
+
+                <card-pj
+                    img="../assets/images/clonNintendo.png"
+                    title="Clon Pagina"
+                    url="./projects/clonPagina/clonNintendo.html"
+                >Clon de la pagina de Nintendo realizado con bootstrap
+                    
+                </card-pj>
+                
+                <card-pj
+                    img="../assets/images/BurgosMarka.png"
+                    title="Centro Infantil"
+                    url="./projects/BurgosMarka/index.html"
+                >Es una plantilla realizada para un Centro Infantil</card-pj>
+
+                <card-pj
+                    img="../assets/images/mobileFirst.png"
+                    title="Batatbit"
+                    url="./projects/mobileFirst/mobileFirst.html"
+
+                >Es un proyecto realizado en los cursos de Platzi</card-pj>
+
+                <card-pj
+                    img="../assets/images/appClima.png"
+                    title="App de Clima"
+                    url="./projects/WeatherApp/index.html"
+                >Aplicación que muestra el clima de la ubicación actual
+                    
+                </card-pj>
+
+                <card-pj
+                    img="../assets/images/portafolioPlantilla.png"
+                    title="Portafotlio"
+                    url="./projects/portafolio/portafolio.html"
+                >Portafolio realizado como practica de platzi
+                    
+                </card-pj>
+                <a href="./projects/portafolio/portafolio.html"></a>
+
+                
+                
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer-container">
+        <section >
+            <div class="resume">
+                <my-logo class="footer-logo"
+                img="../assets/icons/logo.svg"
+                title="Sabimael"
+                subtitle="Web Developer"
+                ></my-logo>
+                <div class="foot-nav">
+                    <h3>CONTACTOS</h3>
+                    <p>
+                        <a href="">
+                            Agencia de Desarrollo Web
+                        </a>
+                    </p>
+                    <a href="https://api.whatsapp.com/send?phone=59160636949&text=Hola!,Sabimael me gustaria saber mas sobre tu trabajo">(+591) 60636949</a>
+                    <a href="" >hola@maguaya.com</a>
+                    <p>La Paz - Bolivia</p>
+                </div>
+
+                <div class="foot-nav">
+                    <h3>SERVICIOS</h3>
+                    <a href="">Web Wordpress</a>
+                    <a href="">Web Personalizado</a>
+                    <a href="">Mantenimiento</a>
+                </div>
+
+            </div>
+        </section>
+        <section class="copyright">
+            <p>© Copytight Sabimael Añaguaya 2022 All Rights Reserved</p>
+        </section>
+    </footer>
+
+    <script src="../main.js" type="module"></script>
+</body>
+</html>

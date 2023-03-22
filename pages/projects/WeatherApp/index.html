@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Weather App</title>
+</head>
+<body class="body dark">
+    <header>
+        <section class="title-date">
+            <h1>Weather Forecast</h1>
+            <p class="current-date">Fecha Actual</p>
+        </section>
+        <form class="main-search">
+            <div class="search-container">
+                <input type="text" class="input-search input-country" list="search-countries" placeholder="name country" required>
+                <datalist id="search-countries"></datalist>
+                
+                <button id="btn-search" class="btn-search">
+                    &#128269
+                </button>
+            </div>
+            <button class="btn-current">
+                &#128205
+            </button>
+        </form>
+    </header>
+
+    <main>
+        <div class="main-forecast">
+            <section class="current-forecast">
+                <div class="info-current-weather">
+                    <h2 id="country" class="country">Country</h2>
+                    <p id="city" class="city">City</p>
+                    <p id="grades" class="grades">25º</p>
+                    <ul>
+                        <li class="weather-list">Wind: <span id="wind" class="weather-span">data</span></li>
+                        <li class="weather-list">Humidity: <span id="humidity"class="weather-span">data</span></li>
+                        <li class="weather-list">Chance of rain: <span id="rain" class="weather-span">data</span></li>
+                    </ul>
+                </div>
+                <div class="img-current-weather">
+                    <img src="./assets/icons/4052984.png" alt="">
+                </div>
+            </section>
+        </div>
+        <section></section>
+
+    </main>
+    <script src="./main.js" type="module"></script>
+</body>
+</html>

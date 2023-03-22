@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <main>
+    <h2 class="title">TIC TAC TOE</h2>
+    <article class="players">
+      <h3 id="turn1">PLAYER 1: <span id="player1"></span></h3>
+      <h3 id="turn2">PLAYER 2: <span  id="player2"></span></h3>
+    </article>
+    <section class="board">
+
+      <div id="pos1" class="space-board">
+        <img class="bg-space" src="./assets/board.svg" alt="" data-point>
+        
+      </div>
+      <div id="pos2" class="space-board">
+        <img class="bg-space" src="./assets/board.svg" alt="" data-point>
+      </div>
+      <div id="pos3" class="space-board">
+        <img class="bg-space" src="./assets/board.svg" alt="" data-point>
+      </div>
+
+      <div id="pos4" class="space-board">
+        <img class="bg-space" src="./assets/board.svg" alt="" data-point>
+      </div>
+      <div id="pos5" class="space-board">
+        <img class="bg-space" src="./assets/board.svg" alt="" data-point>
+      </div>
+      <div id="pos6" class="space-board">
+        <img class="bg-space" src="./assets/board.svg" alt="" data-point>
+      </div>
+
+      <div id="pos7" class="space-board">
+        <img class="bg-space" src="./assets/board.svg" alt="" data-point>
+
+      </div>
+      <div id="pos8" class="space-board">
+        <img class="bg-space" src="./assets/board.svg" alt="" data-point>
+
+      </div>
+      <div id="pos9" class="space-board">
+        <img class="bg-space" src="./assets/board.svg" alt="" data-point>
+      </div>
+    </section>
+    <div class="btns">
+      <button class="btn-gen btn-start">
+        Start
+      </button>
+      <button class="btn-gen btn-restart hide">Restart</button>
+    </div>
+
+    <section class="message-container hide">
+      <div class="message">
+        <h2 class="winner"></h2>
+      </div>
+    </section>
+    <section class="turn-player hide">
+      <div class="message">
+        <h2 class="turn"></h2>
+      </div>
+    </section>
+  </main>
+  <script src="main.js" type="module"></script>
+</body>
+</html>

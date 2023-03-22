@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Alternates:wght@400;500&display=swap');
+@import url('/styles/prefer_color_scheme.css');
+
+:root{
+    --main-color: black;
+    --enfasis: green;
+
+
+    --title: 'Bebas Neue', cursive;
+    --title-size: 3rem;
+    --subtitle-size: 2rem;
+    --content-size: 1.6rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+
+/* ==========================================================
+                        HEADER SECTION 
+========================================================== */
+
+header{
+    width: 100%;
+    min-height: 10rem;
+    max-height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 2em;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+
+/* -------------title-header------------- */
+
+.title-date h1{
+    font-size: var(--title-size);
+    font-family: var(--title);
+}
+.title-date p{
+    font-size: var(--subtitle-size);
+}
+
+
+
+/* ------------search-header------------ */
+.main-search{
+    width: 100%;
+    max-width: 40em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+}
+
+.search-container{
+    width: 100%;
+    height: 5em;
+    border-radius: 1em;
+    overflow: hidden;
+    display: grid;
+    background-color: rgb(235, 235, 235);
+    grid-template-columns: 4fr 1fr;
+}
+
+.input-search{
+
+    border: none;
+    font-family: inherit;
+    font-size: var(--content-size);
+    padding: 0 1em;
+    background-color: rgb(235, 235, 235);
+
+}
+
+.input-search:focus-visible{
+    outline: none;
+}
+
+.btn-search{
+    border: none;
+    cursor: pointer;
+    font-size: var(--subtitle-size);
+    border-radius: 0.5em;
+    background-color: rgb(174, 174, 174);
+}
+
+.btn-current{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.5em;
+    font-size: var(--title-size);
+    border: none;
+    cursor: pointer;
+    background-color: rgb(174, 174, 174);
+
+}
+
+/*===============================
+            MAIN SECTION 
+===============================*/
+
+main{
+    width: 100%;
+    padding: 0 2em;    
+    display: grid;
+    place-content: center;
+}
+
+.main-forecast{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.current-forecast{
+    
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    place-content: center;
+    padding: 2em;
+    margin: auto;
+}
+
+/* -----------------CURRENT FORECAST----------------- */
+
+.info-current-weather{
+    width: 100%;
+}
+
+.country{
+    font-family: var(--title);
+    font-size: var(--title-size);
+}
+
+.city{
+    font-size: var(--subtitle-size);
+}
+
+.grades{
+    font-family: var(--title);
+    font-size: 7em;
+}
+
+.weather-list{
+    font-size: var(--content-size);
+    font-family: var(--title);
+    list-style: none;
+}
+
+.weather-span{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* -----------MAIN IMAGE CURRENT FORECAST----------- */
+
+.img-current-weather{
+    width: 85%;
+}
+
+.img-current-weather img{
+    width: 100%;
+}
+
+/* -------------------HOURLY FORECAST------------------- */
+
+.hourly-forecast{
+    width: 100%;
+    
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.hourly-card{
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hourly-card p{
+    font-size: var(--content-size);
+    text-align: center;
+}
+
+.hourly-card img{
+    width: 80%;
+}

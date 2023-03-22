@@ -1,0 +1,337 @@
+:root{
+    --blue: rgb(217, 215, 241);
+    --white: rgb(255, 253, 222);
+    --peach: rgb(255, 203, 203);
+    --green: rgb(231, 251, 190);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto' sans-serif;
+    font-weight: bold;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    height: fit-content;
+}
+/*
+======================================
+HEADER / header contacts
+======================================
+*/
+.headerContacts{
+    width: 100%;
+    height: fit-content;
+    background: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 10px 0 10px;
+}
+.headerContacts a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+a .headerContacts__img{
+    max-width: 20px;
+    margin-right: 8px;
+}
+
+/*
+======================================
+HEADER / header navBar
+======================================
+*/
+.mainHeader{
+    width: 100%;
+    height: 50%;
+    background-image: url("../img/bgheader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainHeader__navBar{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 253, 222);
+    background: linear-gradient(180deg, rgba(255, 253, 222,1) 0%, rgba(254, 249, 239,0.5) 100%);
+    font-size: 1.6rem;
+}
+
+.logo__container{
+    width: fit-content;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.imgLogo{
+    width: 100px;
+}
+
+.txtLogo{
+    width: 200px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+
+.listItems{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 130px 130px;
+    text-align: center;
+    gap: 10px;
+}
+ .listLink{
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 130px;
+    padding: 5px 8px;
+    
+ }
+
+/* menu mobile */
+.wh{
+    background:rgb(243, 185, 99) ;
+    
+}
+
+.bl{
+
+    background-color: var(--blue);
+}
+
+.pe{
+    background:var(--peach) ;
+    
+}
+
+.ye{
+    background: var(--green) ;
+}
+
+.listLink:hover{
+    transition: 0.5s all ease;
+    box-shadow: 0px 5px 5px 2px gray;
+}
+/*
+======================================
+HEADER / header cards
+======================================
+*/
+.bod{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+}
+.pagImg{
+    width: 100%;
+    border-radius: 10px;
+}
+.containerAll{
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.slide{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 1000ms;
+    animation: autoplay;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.itemSlide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    
+}
+
+.itemSlide-container{
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.paginationItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 25px;
+    height: 20px;
+    border-radius: 1px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(24, 24, 24, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+
+}
+
+.paginationItem:hover{
+    transform: scale(2);
+}
+
+.paginationItem img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.paginationItem:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.infoSlide{
+    display: none;
+    position: absolute;
+    font-size: 1.8rem;
+    width: 100%;
+
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: transparent;
+    text-align: center;
+}
+
+/*EVENTS*/
+
+#uno:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 0), 0, 0);
+}
+
+#uno:checked ~ .pagination .paginationItem[for="uno"]{
+    background: white;
+}
+
+#dos:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+#dos:checked ~ .pagination .paginationItem[for="dos"]{
+    background: white;
+}
+
+#tres:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+#tres:checked ~ .pagination .paginationItem[for="tres"]{
+    background: white;
+}
+
+#cuatro:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 3), 0, 0);
+}
+
+#cuatro:checked ~ .pagination .paginationItem[for="cuatro"]{
+    background: white;
+}
+
+.infoSlide:hover{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgba(24, 24, 24, 0.75);
+    transition: 0.5s all ease-in-out;
+}
+
+
+@keyframes autoplay{
+    25%{
+        transform: translate3d(calc(100% * 0),0,0);
+    }
+    50%{
+        transform: translate3d(calc(-100% * 1),0,0);
+    }
+    75%{
+        transform: translate3d(calc(-100% * 2),0,0);
+    }
+    100%{
+        transform: translate3d(calc(-100% *3), 0,0);
+    }
+}
+
+
+

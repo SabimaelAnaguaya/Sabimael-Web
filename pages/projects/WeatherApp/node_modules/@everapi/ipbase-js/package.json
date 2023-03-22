@@ -1,0 +1,29 @@
+{
+  "name": "@everapi/ipbase-js",
+  "version": "1.0.6",
+  "description": "A JavaScript wrapper for the ipbase.com API",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everapihq/ipbase-js.git"
+  },
+  "keywords": [
+    "currency",
+    "api",
+    "ipbase",
+    "currency conversion",
+    "currency converter",
+    "currency data",
+    "exchange rates"
+  ],
+  "author": "Lukas Struber",
+  "bugs": {
+    "url": "https://github.com/everapihq/ipbase-js/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/everapihq/ipbase-js#readme",
+  "license": "MIT"
+}

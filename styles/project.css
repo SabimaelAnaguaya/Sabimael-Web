@@ -1,0 +1,61 @@
+/* To change color of t-shirt find id Color/Palette/Gray-01 in the svg */
+
+
+.hero-projects{
+    width: 100%;
+    padding: 100px 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.project-welcome{
+    width: 100%;
+    min-width: 250px;
+    max-width: 400px;
+}
+.project-welcome h1{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.project-welcome p{
+    font-size: 2rem;
+}
+
+.my-project{
+    width: 100%;
+    height: fit-content;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.my-project h2{
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.my-project p{
+    width: 100%;
+    min-width: 250px;
+    max-width: 100%;
+    font-size: 1.6rem;
+    padding: 10px 20px;
+}
+
+.container-portafolio__projects{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: start;
+    padding:20px;
+    gap: 50px;
+    overflow-x: scroll;
+    border-radius: 10px;
+}

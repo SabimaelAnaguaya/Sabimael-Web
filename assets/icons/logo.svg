@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#ebebeb;}
+	.st2{fill:#ebebeb;}
+	.st3{fill:#2bd1e7;}
+</style>
+<g id="Container">
+	<rect class="st0" width="32" height="32"/>
+</g>
+<g id="Logo">
+	<polygon id="Color3" class="st1" points="8.7,1.7 0.7,9.6 0.7,22.3 15.1,8 	"/>
+	<polygon id="Color2" class="st2" points="8,17 1.6,23.3 9.5,31.3 22.3,31.3 	"/>
+	<polygon id="Color1_1_" class="st3" points="31.3,9.7 17,24.1 23.2,30.3 31.3,22.3 31.3,16.8 23.3,24.9 22.4,24.1 31.3,15.1 	"/>
+	<polygon id="Color1" class="st3" points="17,0.7 22.3,0.7 30.4,8.8 24.2,15.1 9.8,0.7 15.2,0.7 25.2,10.7 26.2,9.7 	"/>
+
+	<animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="rotate"
+      from="0 16 16"
+      to="360 16 16"
+      dur="10s"
+      repeatCount="indefinite" />
+</g>
+</svg>

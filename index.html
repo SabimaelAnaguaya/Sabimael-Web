@@ -1,279 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Sabimael, desarrollador web, frontend developer,diseño web, web design, desarrollo web, Maguaya, creación páginas web, página web"/>
+    <meta name="author" content="Sabimael">
+    <meta name="description" content="Hola, mi nombre es Sabimael Añaguaya y soy desarrollador front end auto-didacta, disfruto realizandopaginas web funcionales y agradables">
+    <meta name="copyright" content="Sabimael Añaguaya" />
+    <link rel="canonical" href="https://sabimael.com"/>
+    <meta name="robots" content="follow"/>
+    <meta name="robots" content="index"/>
 
-
-  <link rel="stylesheet" href="./styles/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/media.css">
-  <title>Sabimael | Front-End Developer</title>
+    <link rel="icon" type="image/svg" href="./assets/icons/logo.svg"/>
+    <link rel="stylesheet" href="main.css">
+    <title>Sabimael | Web Developer</title>
 </head>
+
 <body>
-  <div class="menu-open-close">
-    <div class="line line1"></div>
-    <div class="line line2"></div>
-    <div class="line line3"></div>
-  </div>
-  <header class="main-header">
-    <div class="header-container close">
-
-      <section  class="header-logo">
-        <picture>
-          <img src="./assets/perfilImages/avatar1.svg" alt="">
-        </picture>
-        <p>Sabimael</p>
-        <p>Front-End Developer</p>
-      </section>
-
-      <nav class="header-nav">
-        <ul>
-          <a href="#introduce">
-            <li>home</li>
-          </a>
-          
-          <a href="#about">
-            <li>about</li>
-          </a>
-          
-          <a href="#portafolio">
-            <li>portafolio</li>
-          </a>
-          
-        </ul>
-      </nav>
-      <section class="header-social">
-        <a href="https://www.linkedin.com/in/sabimael" target="_blank" class="social-media"></a>
-        <a href="https://github.com/SabimaelAnaguaya" target="_blank" class="social-media"></a>
-        <a href="mailto:sabimael.anaguaya@gmail.com" target="_blank" class="social-media"></a>
-        <a href="https://wa.me/59160636949" target="_blank" class="social-media"></a>
-      </section>
+    <div class="content_loader">
+        <img src="./assets/icons/logo.svg" alt="">
     </div>
-  </header>
-  <main>
-    <div class="main-section">
-      
-      <section class="container-odd home-section" id="introduce">
-        <div class="avatar-dialoge" >
-          <img class="avatar" src="./assets/perfilImages/avatar2.svg" alt="">
-          <div class="bg-dialog dialoge"  id="introDialog">
-            <div>
-              <p class="dialog-wlcm" >Welcome to my website</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="introduce-myself ">
-          <h2>Sabimael Añaguaya</h2>
-          <h1>Front-End Developer</h1>
+    <header class="container">
+        <nav class="navbar">
+            <my-logo 
+                img="./assets/icons/logo.svg"
+                title="Sabimael"
+                subtitle="Web Developer">
+            </my-logo>
+            <sa-navlist>
+                    <li slot="list">
+                        <a class="list-link" href="./index.html">INICIO</a>
+                    </li>
+                    <li slot="list">
+                        <a class="list-link" href="./pages/proyectos.html">PROYECTOS</a>
+                    </li>
+                    <li slot="list">
+                        <a class="list-link contactame" href="https://api.whatsapp.com/send?phone=59160636949&text=Hola!,Sabimael me gustaria saber mas sobre tu trabajo">CONTACTAME</a>
+                    </li>
+                
+            </sa-navlist>
+        </nav>
+    </header>
 
-          
-          <a href="./assets/doc/CV Sabimael _ Front-end Developer.pdf" download="SabimaelCV.pdf" class="btn-cv">Download CV</a>
-        </div>
 
-      </section>
+    <main class="main-container">
+        <section class="hero-container">
 
-      <section class="container-odd about-section" id="about">
-        
-        <div class="container-blur">
-            <div class="perfil-photo">
-                <img src="./assets/perfilImages/photo-perfil.png" alt="">
-            </div>
-            <div class="perfil-info">
-                <h2>ABOUT ME</h2>
-                <p class="perfil-text">Hello, I am Sabimael Añaguaya, a <span class="perfil-info--bold">self-taught front-end developer</span> highly resourceful and hard-working professional, </p>
-                <p class="perfil-text">
-                    I have been fascinated with <span class="perfil-info--bold">information technology</span> since my childhood. Now, I enjoy making beautiful and functional Web sites.
-                </p>
-            </div>
-        </div>
+            <article class="introduce-container">
 
-        <div class="skills">
-            <ul class="skill-container">
-              <li><img src="./assets/icons/html5-brands.svg" class="ico-skill" alt=""></li>
-              <li><img src="./assets/icons/css3-alt-brands.svg" class="ico-skill" alt=""></li>
-              <li><img src="./assets/icons/square-js-brands.svg" class="ico-skill" alt=""></li>
-              <li><img src="./assets/icons/github.svg"  class="ico-skill"alt=""></li>
-              <li><img src="./assets/icons/bootstrap-brands.svg" class="ico-skill" alt=""></li>
-              <li><img src="./assets/icons/npm-brands.svg"  class="ico-skill" alt=""></li>
-              <li><img src="./assets/icons/react-brands.svg" class="ico-skill" alt=""></li>            
-            </ul>
-        </div>
-      </section>
-
-      <section class="container-odd portafolio-section" id="portafolio">
-        <h2>MIS PROYECTOS</h2>
-
-        <div class="container-portafolio__projects">
-
-            <div class="card-portafolio">
-                <div class="portafolio" id="burgosMarka">
-                    <img src="./assets/images/BurgosMarka.png">
-                    <div class="card-portafolio__info">    
-                    <h3>KINDER</h3>
-                        <p>It is a static web site for a kinder-garten. </p>
-                        <ul class="tools-portafolio">
-                            <li><img src="./assets/icons/html5-brands.svg" class="ico-skill" alt="" title="HTML5"></li>
-                            <li><img src="./assets/icons/css3-alt-brands.svg" class="ico-skill" alt="" title="CSS3"></li>
-                            <li><img src="./assets/icons/square-js-brands.svg" class="ico-skill" alt="" title="JavaScript"></li>
-                        </ul>
-                        <a href="https://centro-infantil-a.netlify.app/" class="btn-cv" target="_blank">ver</a>
-                    </div>
-    
+                <div class="introduce-content">
+                    <h3>Hola, <span class="color-font">yo soy</span></h3>
+                    <h1>Sabimael Añaguaya</h1>
+                    <h3>Front End Developer</h3>
+                    <p>Soy un desarrollador front end auto-didacta, quien disfruta realizando páginas web funcionales y agradables a la vista. Cuentame como podria ayudarte</p>
+                    
                 </div>
-            </div>
+                <a href="https://api.whatsapp.com/send?phone=59160636949&text=Hola!,Sabimael me gustaria saber mas sobre tu trabajo">
+                    <button>Hablemos</button>
+                </a>
 
-            <div class="card-portafolio">
-                <div class="portafolio" id="template-portfolio">
-                    <img src="./assets/images/portafolioPlantilla.png">
-                    <div class="card-portafolio__info">    
-                    <h3>Portfolio Template</h3>
-                        <p>This is a templete for a portfolio, it is made in Platzi.</p>
-                        <ul class="tools-portafolio">
-                            <li><img src="./assets/icons/html5-brands.svg" class="ico-skill" alt="" title="HTML5"></li>
-                            <li><img src="./assets/icons/css3-alt-brands.svg" class="ico-skill" alt="" title="CSS3"></li>
-                            
-                        </ul>
-                        <a href="./pages/portafolio/portafolio.html" class="btn-cv" target="_blank">ver</a>
-                    </div>
-    
+                <div class="social-container">
+                    <h2>Contactame</h2>
+                    
+                    <a class="jump" href="https://api.whatsapp.com/send?phone=59160636949&text=Hola!,Sabimael me gustaria saber mas sobre tu trabajo">
+                        <bg-icon img="./assets/icons/whatsapp.svg" ></bg-icon>
+                    </a>
+                    <a class="jump1" href="https://github.com/SabimaelAnaguaya">
+                        <bg-icon img="./assets/icons/github.svg" ></bg-icon>
+                    </a>
+                    <a class="jump2" href="https://www.linkedin.com/in/sabimael">
+                        <bg-icon img="./assets/icons/linkedin.svg" ></bg-icon>
+                    </a>
+                    <a class="jump3" href="mailto:sabimael.anaguaya@gmail.com">
+                        <bg-icon img="./assets/icons/mail.svg" ></bg-icon>
+                    </a>
+                    
                 </div>
-            </div>
-
-            <div class="card-portafolio">
-                <div class="portafolio" id="mobile-first">
-                    <img src="./assets/images/mobileFirst.png">
-                    <div class="card-portafolio__info">    
-                    <h3>Batatabit Mobile First</h3>
-                        <p>This is made firstly by mobile screen </p>
-                        <ul class="tools-portafolio">
-                            <li><img src="./assets/icons/html5-brands.svg" class="ico-skill" alt="" title="HTML5"></li>
-                            <li><img src="./assets/icons/css3-alt-brands.svg" class="ico-skill" alt="" title="CSS3"></li>
-                            
-                        </ul>
-                        <a href="./pages/mobileFirst/mobileFirst.html" class="btn-cv" target="_blank">ver</a>
-                    </div>
-    
-                </div>
-            </div>
-
-            <div class="card-portafolio">
-              <div class="portafolio" id="clonNintendo">
-                  <img src="./assets/images/clonNintendo.png">
-                  <div class="card-portafolio__info">    
-                  <h3>Clon Nintendo</h3>
-                      <p>It is a clon of nintendo website, made with Bootstrap</p>
-                      <ul class="tools-portafolio">
-                          <li><img src="./assets/icons/html5-brands.svg" class="ico-skill" alt="" title="HTML5"></li>
-                          <li><img src="./assets/icons/css3-alt-brands.svg" class="ico-skill" alt="" title="CSS3"></li>
-                          <li><img src="./assets/icons/bootstrap-brands.svg" class="ico-skill" alt="" title="bootstrap-brands"></li>
-                          
-                      </ul>
-                      <a href="./pages/clonPagina/clonNintendo.html" class="btn-cv" target="_blank">ver</a>
-                  </div>
-              </div>
-            </div>
-
-            <div class="card-portafolio">
-              <div class="portafolio" id="appWeather">
-                  <img src="./assets/images/appClima.png">
-                  <div class="card-portafolio__info">    
-                  <h3>App Weather</h3>
-                      <p>It is a simple app web, where show the weather</p>
-                      <ul class="tools-portafolio">
-                          <li><img src="./assets/icons/html5-brands.svg" class="ico-skill" alt="" title="HTML5"></li>
-                          <li><img src="./assets/icons/css3-alt-brands.svg" class="ico-skill" alt="" title="CSS3"></li>
-                          <li><img src="./assets/icons/square-js-brands.svg" class="ico-skill" alt="" title="bootstrap-brands"></li>
-                          
-                      </ul>
-                      <a href="./pages/appWeather/appWeather.html" class="btn-cv" target="_blank">ver</a>
-                  </div>
-              </div>
-            </div>
-            <div class="card-portafolio">
-              <div class="portafolio" id="dls">
-                  <img src="./assets/images/dls-web.png">
-                  <div class="card-portafolio__info">    
-                  <h3>DLS - improve</h3>
-                      <p>This is a example how to improve a website</p>
-                      <ul class="tools-portafolio">
-                          <li><img src="./assets/icons/html5-brands.svg" class="ico-skill" alt="" title="HTML5"></li>
-                          <li><img src="./assets/icons/css3-alt-brands.svg" class="ico-skill" alt="" title="CSS3"></li>
-                          <li><img src="./assets/icons/square-js-brands.svg" class="ico-skill" alt="" title="bootstrap-brands"></li>
-                          
-                      </ul>
-                      <a href="./pages/DLS/DLS.html" class="btn-cv" target="_blank">ver</a>
-                  </div>
-              </div>
-            </div>
-        </div>
-        
-      </section>
-
-    </div>
-    <!-- Messenger Plugin de chat Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Plugin de chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "105476909007677");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v15.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-  </main>
-
-  <footer class="main-footer">
-      
-      <div class="footer-section">
-        <h2 class="get-in-touch">GET IN TOUCH</h2>
-        <section class="social-footer">
-          
-          <a href="https://www.linkedin.com/in/sabimael" target="_blank" class="image-social__link">
-              <img src="./assets/icons/linkedin1.svg" class="image-social" alt="">
-            </a>
-            
-          
-          <a href="https://github.com/SabimaelAnaguaya" class="image-social__link">
-              <img src="./assets/icons/github1.svg" class="image-social" alt="">
-            </a>
-
-          
-          <a href="mailto:sabimael.anaguaya@gmail.com" class="image-social__link">
-              <img src="./assets/icons/mail1.svg" class="image-social" alt="">
-            </a>
-          
-            <a href="https://wa.me/59160636949" class="image-social__link">
-            <img src="./assets/icons/whatsapp1.svg" class="image-social" alt="">
-            </a>
+            </article>
+            <picture class="image-perfil">
+                <img-perfil img="./assets/images/photo-perfil.png"></img-perfil>
+            </picture>
         </section>
-      </div>
-  </footer>
+       
+        <section class="services-container">
+            <h4>Mis <span class="color-font">Servicios</span></h4>
+            <h2>What I Do</h2>
+            <section class="cards-service-container">
+                <card-serv
+                    img = "./assets/icons/webdevelopericon.svg"
+                    title="Web Developer"
+                >Maquetación de páginas Web, html, css y wordpress</card-serv>
+                <card-serv
+                    img="./assets/icons/graphic.svg"
+                    title="Graphic Designer"
+                >Diseño de logos, ilustraciones</card-serv>
+                <card-serv 
+                    img="./assets/icons/uxui.svg"
+                    title="UX/UI Designer"
+                >Diseños unicos y funcionales</card-serv>
+            </section>
+        </section>
 
-  <script src="./main.js"></script>
+        <section class="projects-container">
+            <h2>Proyectos <span class="color-font">recientes</span></h2>
+            
+            <div id="carousel" class="carousel">
+
+                <div id='iten_1' class="hideLeft">
+                    <a href="./pages/"></a>
+                    <img src="./assets/images/BurgosMarka.png">
+                </div>
+         
+                <div id='item_2' class="prevLeftSecond">
+                    <img src="./assets/images/appClima.png">
+                </div>
+         
+               <div id='item_3' class="prev">
+                 <img src="./assets/images/clonNintendo.png">
+               </div>
+         
+               <div id='item_4' class="selected">
+                 <img src="./assets/images/centroInfantil.png">
+               </div>
+         
+               <div id='item_5' class="next">
+                 <img src="./assets/images/mobileFirst.png">
+               </div>
+         
+               <div id='item_6' class="nextRightSecond">
+                 <img src="./assets/images/portafolioPlantilla.png">
+               </div>
+         
+               <div id='item_7' class="hideRight">
+                 <img src="./assets/images/dls-web.png">
+               </div>
+         
+               <div id='item_8' class="hideRight">
+                 <img src="./assets/images/Instituto.png">
+               </div>
+         
+             </div>
+         
+             <div class="buttons">
+               <button id="prev">Anterior</button>
+               <button><a href="./pages/proyectos.html">Más</a></button>
+               <button id="next">Siguiente</button>
+             </div>
+        </section>
+    </main>
+
+
+    <footer class="footer-container">
+        <section >
+            <div class="resume">
+                <my-logo class="footer-logo"
+                img="./assets/icons/logo.svg"
+                title="Sabimael"
+                subtitle="Web Developer"
+                ></my-logo>
+                <div class="foot-nav">
+                    <h3>CONTACTOS</h3>
+                    <p>
+                        <a href="">
+                            Agencia de Desarrollo Web
+                        </a>
+                    </p>
+                    <a href="https://api.whatsapp.com/send?phone=59160636949&text=Hola!,Sabimael me gustaria saber mas sobre tu trabajo">(+591) 60636949</a>
+                    <a href="mailto:sabimael.anaguaya@gmail.com" >hola@maguaya.com</a>
+                    <p>Bolivia</p>
+                </div>
+
+                <div class="foot-nav">
+                    <h3>SERVICIOS</h3>
+                    <a href="./pages/MAGUAYA/maguaya.html">Web Wordpress</a>
+                    <a href="./pages/MAGUAYA/maguaya.html">Web Personalizado</a>
+                    <a href="./pages/MAGUAYA/maguaya.html">Mantenimiento</a>
+                </div>
+
+            </div>
+        </section>
+        <section class="copyright">
+            <p>© Copytight Sabimael Añaguaya 2022 All Rights Reserved</p>
+        </section>
+    </footer>
+    <script src="./scripts/carousel.js"></script>
+    <script src="./scripts/observador.js"></script>
+    <script src="./main.js" type="module"></script>
 </body>
 </html>

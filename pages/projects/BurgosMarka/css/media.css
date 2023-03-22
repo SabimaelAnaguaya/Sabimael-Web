@@ -1,0 +1,48 @@
+@media only screen  and (min-width: 768px) {
+    .mainHeader__navBar{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+    }
+    
+    .listItems{
+        grid-template-columns: repeat(4, 130px);
+    }    
+    .listLink{
+        place-self: center;
+        font-size: 1.6rem;
+        width: 130px;
+        border-radius: 10px;
+        padding: 5px 8px;
+    }
+    .imgMensaje{
+        width: 100px;
+    }
+
+    .itemSlide-container{
+        overflow: hidden;
+        width: 100%;
+        height: 500px;
+    }
+
+    /*
+    SECCION GALERIA
+*/
+.galeria{
+    background-color:var(--peach);
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+}
+
+/*
+    ACTIVIDADES
+*/
+
+
+}
