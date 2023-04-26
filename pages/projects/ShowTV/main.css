@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+html{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+}
+body{
+  background: rgb(255, 255, 255);
+  padding: 0 2rem;
+}
+
+a{
+  text-decoration: none;
+  font-family: inherit;
+  color: white;
+  margin: 1rem;
+}
+#search{
+  width: 50%;
+  min-width: 200px;
+  font-size: 1.3rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 1rem;
+  padding: 5px 15px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.275);
+}
+.grid-fluid{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  text-align: center;
+  gap: 2rem;
+}
+
+.show{
+  min-width: 200px;
+  aspect-ratio: 1/1.3;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  background: rgb(37, 37, 37);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.375);
+}
+
+.show img{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.show h3{
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  z-index: 2;
+  bottom: -1rem;
+  font-size: 1.5rem;
+  background-color: rgba(212, 212, 212, 0.321);
+  backdrop-filter: blur(10px);
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.show div{
+  height: 75%;
+  overflow: scroll;
+  margin-top: 1rem;
+  position: absolute;
+  padding: 1rem;
+  padding-top: 0;
+  top: -.7rem;
+  transition: all 0.3s ease;
+  transform: translateY(-100%);
+  color: white;
+}
+
+.show a{
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s ease;
+  transform: translateY(200%);
+  border-radius: 0.5rem;
+  padding: 5px 0;
+  left: calc(50% - 30%);
+  
+}
+
+.show:hover img{
+  filter:opacity(0.5) blur(10px);
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+.show:hover h3{
+  transform: translateY(200%);
+  transition: all 0.5s ease;
+}
+
+.show:hover div{
+  transform: translateY(0);
+  
+  transition: all 0.5s ease;
+  z-index: 3;
+}
+.show:hover a{
+  transform: translateY(0);
+  transition: all 0.5s ease;
+  z-index: 3;
+}
+
+.show a:hover{
+  background: rgb(65, 87, 226);
+}
+.loader{
+  display: block;
+  margin: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  body{
+    background: rgb(45, 45, 45);
+  }
+  html{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  
+}

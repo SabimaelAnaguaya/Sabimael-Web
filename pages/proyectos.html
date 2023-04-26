@@ -14,6 +14,7 @@
 
     <link rel="icon" type="image/svg" href="../assets/icons/logo.svg"/>
     <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../styles/mediaQueries.css">
     <title>Sabimael | Proyectos</title>
 </head>
 
@@ -35,9 +36,7 @@
                     <li slot="list">
                         <a class="list-link" href="./proyectos.html">PROYECTOS</a>
                     </li>
-                    <li slot="list">
-                        <a class="list-link" href="./MAGUAYA/maguaya.html">SERVICIO</a>
-                    </li>
+                    
                     <li slot="list">
                         <a class="list-link contactame" href="https://api.whatsapp.com/send?phone=59160636949&text=Hola!,Sabimael me gustaria saber mas sobre tu trabajo">CONTACTAME</a>
                     </li>
@@ -64,6 +63,14 @@
             <p>En esta primera seccion estan mis proyectos realizados a lo largo de mi aprendizaje como desarrollador frontend, desde lo básico en HTML, CSS, JS, Bootstrap, WebComponents y todas las tecnologías que iré aprendiendo</p>
             
             <div class="container-portafolio__projects">
+                <card-pj
+                    img="../assets/images/ShowTV.png"
+                    title="Buscador TV Shows"
+                    url="./projects/ShowTV/api-tvshow.html"
+                >Buscador de Shows de TV, para este proyecto hice uso de la API TV Maze, a traves de fetch asincronico  
+                    
+                </card-pj>
+
                 <card-pj
                     img="../assets/images/tictactoe.png"
                     title="Tic Tac Toe"
@@ -108,7 +115,6 @@
                 >Portafolio realizado como practica de platzi
                     
                 </card-pj>
-                <a href="./projects/portafolio/portafolio.html"></a>
 
                 
                 
@@ -129,21 +135,17 @@
                 ></my-logo>
                 <div class="foot-nav">
                     <h3>CONTACTOS</h3>
-                    <p>
-                        <a href="">
-                            Agencia de Desarrollo Web
-                        </a>
-                    </p>
-                    <a href="https://api.whatsapp.com/send?phone=59160636949&text=Hola!,Sabimael me gustaria saber mas sobre tu trabajo">(+591) 60636949</a>
-                    <a href="" >hola@maguaya.com</a>
+                    
+                    <a href="https://api.whatsapp.com/send?phone=59160636949&text=Hola!,Sabimael me gustaria saber mas sobre tu trabajo" target="_blank">Contacto Whatsapp</a>
+                    <a href="" >sabimael.anaguaya@gmail.com</a>
                     <p>La Paz - Bolivia</p>
                 </div>
 
                 <div class="foot-nav">
                     <h3>SERVICIOS</h3>
-                    <a href="">Web Wordpress</a>
-                    <a href="">Web Personalizado</a>
-                    <a href="">Mantenimiento</a>
+                    <a href="../index.html">Web Wordpress</a>
+                    <a href="../index.html">Web Personalizado</a>
+                    <a href="../index.html">Mantenimiento</a>
                 </div>
 
             </div>

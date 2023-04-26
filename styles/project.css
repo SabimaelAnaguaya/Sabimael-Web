@@ -50,7 +50,7 @@
 }
 
 .container-portafolio__projects{
-    height: 100%;
+    height: 80%;
     width: fit-content;
     display: flex;
     justify-content: start;
