@@ -76,6 +76,7 @@ class FiveCards3d extends HTMLElement {
         height: auto;
         margin:0 auto;
         position: relative;
+        overflow: hidden;
       }
       .slider-container{
         min-height: 200px;
