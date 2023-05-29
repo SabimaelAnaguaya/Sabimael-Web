@@ -72,7 +72,7 @@ class FiveCards3d extends HTMLElement {
         box-sizing: border-box;
       }
       .slider{
-        max-width: 80%;
+        max-width: 100%
         height: auto;
         margin:0 auto;
         position: relative;
@@ -185,9 +185,9 @@ class FiveCards3d extends HTMLElement {
       }
 
       .flecha{
-        padding: 3rem;        
+        padding: 1rem;        
         color:white;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: bold;
         position: absolute;
         top: 50%;
