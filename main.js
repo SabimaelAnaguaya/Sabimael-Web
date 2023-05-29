@@ -4,6 +4,7 @@ import { BgIcon } from "./components/BgIcon.js";
 import { Navlist } from "./components/Navlist.js";
 import { CardService } from "./components/CardService.js";
 import { CardPj } from "./components/CardProject.js"
+import { FiveCards3d } from "./components/FiveCards3d.js";
 
 /* Funcion para realizar un preload de la pagina */
 
