@@ -12,9 +12,8 @@ class CardService extends HTMLElement {
         const template = document.createElement('template');
         template.innerHTML=`
                 <div class="card-serv">
-                    <picture>
-                        <img src="${this.img}" alt="imagen de servicio">
-                    </picture>
+                    <img src="${this.img}" alt="imagen de servicio">
+                    
                     <div>
                         <h2>${this.title}</h2>
                         <p><slot></slot></p>
@@ -52,13 +51,11 @@ class CardService extends HTMLElement {
 
             }
 
-            .card-serv picture{
-                width: 100%;
-                height: 100px;
-            }
+        
 
-            img{
-                height:100%;
+            .card-serv img{
+                aspect-ratio:1/1;
+                height:100px;
             }
 
             .card-serv h2{
